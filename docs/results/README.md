@@ -2,6 +2,11 @@
 
 Record new HDLIO server build/evaluation outcomes here.
 
+## Entries
+
+- `server_docker_build_20260516.md` - server Docker image/build verification
+  and hardware-based parallel container plan.
+
 Each result should include:
 
 - git hash or patch identifier,
