@@ -25,6 +25,12 @@ and evaluation run on the server.
 Do not store passwords in repo files, memory, shell scripts, SSH config, or
 logs. Use SSH key auth or prompt-based auth.
 
+Server run artifacts must be copied back and verified before cleanup. Delete
+only the specific run directory under `~/Project/hdlio/dump/<run_label>/` after
+the copied artifact manifest passes locally. Never bulk-delete datasets,
+repository source, `build/`, `devel/`, Docker images, or the whole `dump/`
+directory unless the user explicitly asks for that cleanup.
+
 ## Algorithm Development Rules
 
 1. Use exactly one active algorithm config per sensor family:
@@ -62,6 +68,8 @@ Treat them as candidate code, not fixed methodology.
 3. Build: implement locally with narrow source changes.
 4. Eval: run build/evaluation only on `eutae@192.168.0.42:~/Project/hdlio/`.
 5. Results: record server results under `docs/results/`.
+6. Artifact cleanup: copy server artifacts to local ignored storage, verify the
+   manifest/checksums, then remove only the verified remote run directory.
 
 If implementation diverges from the design, update the design and state the
 drift explicitly.
