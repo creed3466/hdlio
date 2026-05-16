@@ -1,0 +1,149 @@
+# HDLIO Avia sensor config.
+# One active config covers Avia runs. Sequence-specific overlays and old
+# classifier templates are intentionally not active in the reboot.
+frontend_enable_classifier: false
+frontend_is_avia_outdoor: false
+
+use_sim_time: true
+
+map_frame: "map"
+base_frame: "base_link"
+
+imu_topic: "/livox/avia/imu"
+lidar_topic: "/livox/avia/lidar"
+
+point_time_field: "timestamp"
+point_time_unit: "nsec"
+point_time_reference: "relative"
+
+deterministic_queue: true
+deterministic_queue_delay_ms: 100.0
+deterministic_queue_lidar_anchor: true
+
+# ---- IMU noise (Avia BMI088 spec) ----
+imu_gyro_noise: 0.01
+imu_accel_noise: 0.1
+imu_gyro_bias_noise: 0.0001
+imu_accel_bias_noise: 0.0001
+imu_gravity_z: -9.81
+imu_init_samples: 200
+
+# ---- Extrinsic: IMU -> LiDAR (Avia hardware constant) ----
+extrinsic_x: 0.04165
+extrinsic_y: 0.02326
+extrinsic_z: -0.0284
+
+# ---- Preprocessing (outdoor) ----
+frontend_voxel_size: 0.5
+frontend_stride: 6                              # Avia ~24k pts at stride=6
+frontend_enable_undistortion: true
+frontend_min_distance: 1.0
+frontend_max_distance: 100.0                    # Outdoor range
+frontend_scan_duration: 0.1
+frontend_init_imu_samples: 100
+
+# ---- IEKF ----
+frontend_max_iterations: 7
+frontend_max_inner_iterations: 7
+frontend_convergence_threshold: 0.001
+frontend_lidar_noise_std: 0.02
+frontend_max_plane_distance: 0.3
+frontend_max_correspondences: 0
+frontend_anisotropic_iekf_router_enable: false
+
+# ---- Map ----
+frontend_map_l0_voxel_size: 0.5
+frontend_voxel_hierarchy_factor: 3
+frontend_map_box_multiplier: 2.0
+frontend_min_l0_for_surfel: 3
+frontend_map_planarity_threshold: 0.05
+frontend_l0_ema_alpha_min: 0.10
+frontend_l0_centroid_freeze_count: 50
+frontend_surfel_lock_frames: -1
+
+# ---- L2 Multi-Scale Correspondence ----
+frontend_enable_l2_correspondences: true
+frontend_l2_planarity_threshold: 0.12
+frontend_min_l1_for_l2_surfel: 4
+frontend_l2_noise_scale: 9.0
+
+# ---- PointVoxelMap ----
+frontend_pvmap_voxel_size: 0.5
+frontend_pvmap_max_points_per_voxel: 60
+frontend_pvmap_k_neighbors: 9
+frontend_pvmap_planarity_threshold: 0.10
+frontend_pvmap_sigma2_scale: 1.0
+
+# ---- Degeneracy detection (detect-only: soft_floor=1.0) ----
+# 9/9 consensus. Ratio < 0.001 fires on every frame (100% structural degeneracy).
+# soft_floor=1.0: NO IEKF eigenvalue remapping. Only provides d_deg direction to Eq(4).
+frontend_enable_degeneracy_detection: true
+frontend_degeneracy_threshold: 10.0
+frontend_degeneracy_ratio_threshold: 0.001
+frontend_degeneracy_soft_floor: 1.0
+
+# ---- Eq(4): Direction-Selective Alpha Modulation ----
+# 9/9 ON (universal). alpha_eff = alpha_min * max(floor, 1 - |n·d_deg|²)
+# With Avia d_deg on horizontal axes: E[mod] ≈ 0.86-0.90, actual reduction ~10-14%.
+frontend_enable_degeneracy_adaptive_alpha: true
+frontend_degeneracy_alpha_scale: 1.0
+frontend_alpha_degen_floor: 0.3
+
+# ---- DDPO + DARBF: Bidirectional degeneracy feedback (paper Sec.VI) ----
+# DDPO: switch corr source surfel→PVMap when |n·d_deg| > τ (=0.7 ≈ cos45°)
+# DARBF: freeze PVMap writes for aligned voxels to protect fallback source
+frontend_enable_degen_pvmap_override: true
+frontend_degen_pvmap_cos_threshold: 0.7
+frontend_pvmap_enable_degen_freeze: true
+
+# ---- CSCF + geometric covariance ----
+frontend_enable_cscf: true
+frontend_cscf_kernel_bandwidth: 0.25
+frontend_enable_geometric_covariance: true
+frontend_geometric_cov_min_eigenvalue: 0.005
+frontend_geometric_cov_min_points: 6
+frontend_p2d_omega_scale: 0.1
+
+# ---- EMA spatial gate (map protection) ----
+frontend_ema_gate_radius: 0.2
+
+# ---- Info cap ----
+frontend_max_corr_per_l1: 3
+
+# ---- Pseudo-observations ----
+frontend_enable_bias_pseudo_obs: true
+frontend_bias_bg_sigma: 0.1
+frontend_bias_ba_sigma: 0.5
+frontend_enable_velocity_pseudo_obs: true
+frontend_velocity_sigma: 3.0
+frontend_enable_gravity_norm_constraint: true
+frontend_gravity_norm_sigma: 0.01
+
+# ---- Covariance floor ----
+frontend_p_floor_rot: 0.000001
+frontend_p_floor_pos: 0.000001
+frontend_p_floor_vel: 0.0001
+frontend_p_floor_bias: 0.00000001
+frontend_p_floor_grav: 0.00000001
+
+# ---- Adaptive noise (outdoor) ----
+frontend_enable_adaptive_noise: true
+frontend_adaptive_range_scale: 0.3
+frontend_adaptive_range_ref: 25.0               # Outdoor range distribution
+frontend_adaptive_incidence_scale: 1.5
+frontend_adaptive_planarity_scale: 2.0
+
+# ---- Other ----
+frontend_enable_a_matrix_correction: false
+frontend_enable_pko: true
+frontend_enable_debug_timing: true
+
+# ---- Fixed-Lag Smoother ----
+frontend_enable_fixed_lag_smoother: true
+frontend_fls_max_iterations: 3
+frontend_fls_convergence_threshold: 0.0001
+frontend_fls_max_pos_correction: 0.05
+frontend_fls_max_rot_correction: 0.087
+frontend_fls_max_vel_correction: 0.5
+frontend_fls_min_correspondences: 50
+frontend_fls_imu_noise_scale: 10.0

@@ -1,0 +1,25 @@
+<launch>
+  <!--
+    Default Mid-360 republish.launch.
+
+    Consumes: /livox/mid360/lidar   (livox_ros_driver2/CustomMsg on wire)
+    Produces: /livox/mid360/lidar_v1 (livox_ros_driver/CustomMsg — same bytes)
+
+    The output topic name intentionally differs from the input so consumers
+    can choose via remap whether to use the bridged topic (default for all
+    Mid-360 runs) or stay on the original v2 topic (not currently supported
+    by any v1-only baseline).
+  -->
+  <arg name="input_topic"  default="/livox/mid360/lidar"/>
+  <arg name="output_topic" default="/livox/mid360/lidar_v1"/>
+  <arg name="queue_size"   default="100"/>
+
+  <node pkg="livox_v2_to_v1_republish"
+        type="republish_node"
+        name="livox_v2_to_v1_republish"
+        output="screen">
+    <param name="input_topic"  value="$(arg input_topic)"/>
+    <param name="output_topic" value="$(arg output_topic)"/>
+    <param name="queue_size"   value="$(arg queue_size)"/>
+  </node>
+</launch>

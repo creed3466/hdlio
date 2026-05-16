@@ -1,0 +1,7 @@
+<launch>
+  <param name="/use_sim_time" value="true"/>
+  <arg name="config" default="mid360.yaml"/>
+  <node name="tofslam_node" pkg="tof_slam" type="tofslam_node" output="screen">
+    <rosparam file="$(find tof_slam)/config/$(arg config)" command="load"/>
+  </node>
+</launch>

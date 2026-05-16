@@ -1,0 +1,11 @@
+<launch>
+    <!-- Minimal headless launch for NTU VIRAL LIO-SAM runs.
+         - Loads the mounted /config/params.yaml (copied to LIO-SAM/config/params.yaml at run time)
+         - Starts the 4 LIO-SAM nodes via module_loam.launch
+         - Does NOT launch rviz (headless container)
+         - Does NOT play a bag (we play externally via rosbag play) -->
+    <arg name="project" default="lio_sam"/>
+    <param name="/use_sim_time" value="true"/>
+    <rosparam file="$(find lio_sam)/config/params.yaml" command="load"/>
+    <include file="$(find lio_sam)/launch/include/module_loam.launch"/>
+</launch>

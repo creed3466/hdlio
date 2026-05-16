@@ -1,0 +1,44 @@
+# DLIO config for M3DGR Indoor sequences (Mid-360 sensor, feature/livox-support)
+#
+# Topics (set via launch args, not in this config):
+#   Livox:  /livox/mid360/lidar   (livox_ros_driver2/CustomMsg, native subscriber)
+#   IMU:    /livox/mid360/imu
+#
+# Extrinsics: same as mid360.yaml (same sensor mount).
+# Indoor sequences use the same Mid-360 hardware as outdoor Mid-360.
+
+dlio:
+
+  version: 1.2.0
+
+  adaptive: true
+
+  pointcloud:
+    deskew: true
+    voxelize: true
+
+  imu:
+    calibration: true
+    # M3DGR Mid-360 IMU publishes in g-units (same sensor as outdoor).
+    normalized: true
+    intrinsics:
+      accel:
+        bias: [ 0.0, 0.0, 0.0 ]
+        sm:   [ 1.,  0.,  0.,
+                0.,  1.,  0.,
+                0.,  0.,  1. ]
+      gyro:
+        bias: [ 0.0, 0.0, 0.0 ]
+
+  extrinsics:
+    baselink2imu:
+      t: [ 0.0, 0.0, 0.0 ]
+      R: [ 1.,  0.,  0.,
+           0.,  1.,  0.,
+           0.,  0.,  1. ]
+    baselink2lidar:
+      # IMU->LiDAR translation from M3DGR Mid-360 dataset
+      t: [ -0.011, -0.02329, 0.04412 ]
+      R: [ 1.,  0.,  0.,
+           0.,  1.,  0.,
+           0.,  0.,  1. ]

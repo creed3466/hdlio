@@ -1,0 +1,3617 @@
+{
+  "schemaVersion": "ecc.install.v1",
+  "installedAt": "2026-05-16T08:45:06.756Z",
+  "target": {
+    "id": "codex-project",
+    "target": "codex",
+    "kind": "project",
+    "root": "/Users/euntae/Project/tofslam/.codex",
+    "installStatePath": "/Users/euntae/Project/tofslam/.codex/ecc-install-state.json"
+  },
+  "request": {
+    "profile": "research",
+    "modules": [],
+    "includeComponents": [],
+    "excludeComponents": [],
+    "legacyLanguages": [],
+    "legacyMode": false
+  },
+  "resolution": {
+    "selectedModules": [
+      "rules-core",
+      "agents-core",
+      "commands-core",
+      "hooks-runtime",
+      "platform-configs",
+      "framework-language",
+      "database",
+      "workflow-quality",
+      "security",
+      "research-apis",
+      "agentic-patterns",
+      "devops-infra"
+    ],
+    "skippedModules": []
+  },
+  "source": {
+    "repoVersion": "2.4.1",
+    "repoCommit": "cfd601a8c887a5e48c8254846a2b48e9b219c1b3",
+    "manifestVersion": 1
+  },
+  "operations": [
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/README.md",
+      "sourceRelativePath": "rules/README.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/README.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/common/agents.md",
+      "sourceRelativePath": "rules/common/agents.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/common/agents.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/common/code-review.md",
+      "sourceRelativePath": "rules/common/code-review.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/common/code-review.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/common/coding-style.md",
+      "sourceRelativePath": "rules/common/coding-style.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/common/coding-style.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/common/development-workflow.md",
+      "sourceRelativePath": "rules/common/development-workflow.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/common/development-workflow.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/common/git-workflow.md",
+      "sourceRelativePath": "rules/common/git-workflow.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/common/git-workflow.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/common/hooks.md",
+      "sourceRelativePath": "rules/common/hooks.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/common/hooks.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/common/patterns.md",
+      "sourceRelativePath": "rules/common/patterns.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/common/patterns.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/common/performance.md",
+      "sourceRelativePath": "rules/common/performance.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/common/performance.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/common/security.md",
+      "sourceRelativePath": "rules/common/security.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/common/security.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/common/testing.md",
+      "sourceRelativePath": "rules/common/testing.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/common/testing.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/cpp/coding-style.md",
+      "sourceRelativePath": "rules/cpp/coding-style.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/cpp/coding-style.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/cpp/hooks.md",
+      "sourceRelativePath": "rules/cpp/hooks.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/cpp/hooks.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/cpp/patterns.md",
+      "sourceRelativePath": "rules/cpp/patterns.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/cpp/patterns.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/cpp/security.md",
+      "sourceRelativePath": "rules/cpp/security.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/cpp/security.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/cpp/testing.md",
+      "sourceRelativePath": "rules/cpp/testing.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/cpp/testing.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/python/coding-style.md",
+      "sourceRelativePath": "rules/python/coding-style.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/python/coding-style.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/python/hooks.md",
+      "sourceRelativePath": "rules/python/hooks.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/python/hooks.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/python/patterns.md",
+      "sourceRelativePath": "rules/python/patterns.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/python/patterns.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/python/security.md",
+      "sourceRelativePath": "rules/python/security.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/python/security.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/rules/python/testing.md",
+      "sourceRelativePath": "rules/python/testing.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/ecc/rules/python/testing.md",
+      "strategy": "codex-rules-reference-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "rules-core",
+      "sourceRelativePath": "rules/common",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-rules-pack-common.md",
+      "strategy": "render-codex-rules-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "rules-core",
+      "sourceRelativePath": "rules/cpp",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-rules-pack-cpp.md",
+      "strategy": "render-codex-rules-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "rules-core",
+      "sourceRelativePath": "rules/python",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-rules-pack-python.md",
+      "strategy": "render-codex-rules-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "merge-managed-block",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "AGENTS.md + .codex/AGENTS.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/AGENTS.md",
+      "strategy": "merge-codex-project-agents-md",
+      "ownership": "managed",
+      "scaffoldOnly": false,
+      "managedContent": "<!-- BEGIN RCC -->\n# Everything Claude Code (ECC) — Agent Instructions\n\nThis repository is used as a **research-development harness**, providing 22 specialized agents, 78 skills, 73 commands, and automated hook workflows for research-driven software development on Python and C++ projects.\n\nThe default operating mode is research-driven. For non-trivial work, route through the Research → Architect → Build → Eval pipeline via the `ben` orchestrator.\n\n**Version:** 1.10.0\n\n## Core Principles\n\n1. **Research Before Implementation** — For algorithms, models, architecture, or theoretical claims, start with research, not code\n2. **Design Artifacts Are Durable** — Before building, produce or update a short design document under `docs/specs/`\n3. **Evidence Over Assertion** — Keep facts, assumptions, and open questions separate; prefer primary sources\n4. **Validation > Tests** — Passing tests is not completion; validation means the result supports the intended research or design claim\n5. **Agent-First** — Delegate to specialized agents; use `ben` as the default orchestrator for multi-stage work\n6. **Immutability** — Always create new objects, never mutate existing ones\n7. **Explicit Drift** — If implementation diverges from the design, surface the drift and update the design\n\n> The production-engineering principles (TDD 80%+, security-first hardening, OWASP checklist) still apply **when building production components**. See `## When Building Production Components` below.\n\n## Available Agents\n\nRCC v2 ships 22 agents — research orchestration, research-stage specialists,\ncross-model adversarial reviewers, paper review, software-engineering\nreview/build helpers for the supported languages (Python + C++), and\ngeneric engineering utilities.\n\n### R&D Orchestration (3)\n\n| Agent | Purpose | When to Use |\n|-------|---------|-------------|\n| ben | Research-development orchestrator (Research → Codex Review → Architect → Build → Eval) | Default for non-trivial research-driven work; enforces stage gates |\n| researcher | Research-stage specialist (hypothesis, mathematical analysis, literature verification, theoretical-bottleneck enforcement) | Before any non-trivial implementation |\n| codex-reviewer | Adversarial cross-model reviewer via Codex CLI (GPT-5.5) | Stage 2 of the 5-stage pipeline; model-independent critique |\n\n### Design + Planning (3)\n\n| Agent | Purpose | When to Use |\n|-------|---------|-------------|\n| architect | System design and scalability — turns research into implementation-ready design | Architectural decisions, design contracts |\n| code-architect | Designs feature architectures from existing patterns | New features with concrete implementation blueprint |\n| planner | Implementation planning, dependencies, risks | Complex features, refactoring |\n\n### Code Review (4)\n\n| Agent | Purpose | When to Use |\n|-------|---------|-------------|\n| code-reviewer | General code quality and maintainability | After writing/modifying code |\n| security-reviewer | Vulnerability detection (OWASP Top 10, secrets, SSRF, injection) | Before commits, sensitive code |\n| python-reviewer | Python — PEP 8, type hints, security, performance | Python projects |\n| cpp-reviewer | C++ — memory safety, modern idioms, concurrency, performance | C++ projects |\n\n### Build + Performance (3)\n\n| Agent | Purpose | When to Use |\n|-------|---------|-------------|\n| build-error-resolver | Generic build/type error resolution | When build fails |\n| cpp-build-resolver | C++/CMake/linker error resolution | C++ build failures |\n| pytorch-build-resolver | PyTorch runtime/CUDA/training error resolution | PyTorch training crashes |\n\n### Code Analysis (3)\n\n| Agent | Purpose | When to Use |\n|-------|---------|-------------|\n| code-explorer | Deep codebase analysis — traces execution paths, maps architecture | Understanding unfamiliar code before changes |\n| refactor-cleaner | Dead code cleanup, unused imports, duplicates | Code maintenance |\n| tdd-guide | Test-driven development enforcement | New features, bug fixes |\n\n### Docs + Database (3)\n\n| Agent | Purpose | When to Use |\n|-------|---------|-------------|\n| docs-lookup | Documentation lookup via Context7 MCP | API/docs questions |\n| doc-updater | Documentation and codemap updates | Doc/codemap maintenance |\n| database-reviewer | PostgreSQL specialist (schema, queries, indexing) | Schema design, query optimization |\n\n### Paper Review (1)\n\n| Agent | Purpose | When to Use |\n|-------|---------|-------------|\n| paper-reviewer | Adversarial paper reviewer with strict context isolation (RA-L/ICRA/IROS/CVPR/TRO/IJRR) | Pre-submission audit; takes only `{pdf_path, venue, reviewer, role}` |\n\n## Agent Orchestration\n\nUse agents proactively without user prompt:\n- Non-trivial research-driven work → **ben** (routes through 5-stage pipeline)\n- Pre-implementation research → **researcher**\n- Adversarial cross-model review → **codex-reviewer**\n- Complex feature requests → **planner**\n- Architectural decision → **architect** or **code-architect**\n- Unfamiliar codebase exploration → **code-explorer**\n- Code just written/modified → **code-reviewer** (+ language reviewer)\n- Bug fix or new feature → **tdd-guide**\n- Security-sensitive code → **security-reviewer**\n- Pre-submission paper audit → **paper-reviewer**\n\nUse parallel execution for independent operations — launch multiple agents simultaneously.\n\n## Research Workflow (Default)\n\nFor algorithmic work, model changes, architecture decisions, or any theoretical claim, operate in four stages:\n\n1. **Research** — Establish problem, baseline, evidence, and candidate proposal. Prefer primary sources (papers, official docs, reference implementations). Output goes to `docs/research/`.\n2. **Architect** — Turn research into an implementation-ready design: objective, baseline, proposal, interfaces, risks, validation plan. Output goes to `docs/specs/`.\n3. **Build** — Implement against the design. Surface design drift explicitly. Keep implementation notes in `docs/experiments/`.\n4. **Eval** — Compare the result to the baseline or success criteria defined in Architect. Record outcomes in `docs/results/`.\n\nDo not skip directly from idea to code unless the user asks for a fast prototype. The `ben` agent enforces these stage gates.\n\n**Completion standard:** Work is complete when the design intent is clear, the implementation matches intent, the result has been evaluated at the right level, and remaining uncertainty is stated explicitly.\n\n## When Building Production Components\n\nThe guidelines below apply to production-bound code (services, APIs, shipped software). For pure research/experimentation code, scale these expectations to context.\n\n### Security Guidelines\n\n**Before ANY commit:**\n- No hardcoded secrets (API keys, passwords, tokens)\n- All user inputs validated\n- SQL injection prevention (parameterized queries)\n- XSS prevention (sanitized HTML)\n- CSRF protection enabled\n- Authentication/authorization verified\n- Rate limiting on all endpoints\n- Error messages don't leak sensitive data\n\n**Secret management:** NEVER hardcode secrets. Use environment variables or a secret manager. Validate required secrets at startup. Rotate any exposed secrets immediately.\n\n**If security issue found:** STOP → use security-reviewer agent → fix CRITICAL issues → rotate exposed secrets → review codebase for similar issues.\n\n### Coding Style\n\n**Immutability (CRITICAL):** Always create new objects, never mutate. Return new copies with changes applied.\n\n**File organization:** Many small files over few large ones. 200-400 lines typical, 800 max. Organize by feature/domain, not by type. High cohesion, low coupling.\n\n**Error handling:** Handle errors at every level. Provide user-friendly messages in UI code. Log detailed context server-side. Never silently swallow errors.\n\n**Input validation:** Validate all user input at system boundaries. Use schema-based validation. Fail fast with clear messages. Never trust external data.\n\n**Code quality checklist:**\n- Functions small (<50 lines), files focused (<800 lines)\n- No deep nesting (>4 levels)\n- Proper error handling, no hardcoded values\n- Readable, well-named identifiers\n\n### Testing Requirements\n\n**Minimum coverage: 80%** (production components)\n\nTest types (all required):\n1. **Unit tests** — Individual functions, utilities, components\n2. **Integration tests** — API endpoints, database operations\n3. **E2E tests** — Critical user flows\n\n**TDD workflow (mandatory):**\n1. Write test first (RED) — test should FAIL\n2. Write minimal implementation (GREEN) — test should PASS\n3. Refactor (IMPROVE) — verify coverage 80%+\n\nTroubleshoot failures: check test isolation → verify mocks → fix implementation (not tests, unless tests are wrong).\n\n## Development Workflow\n\n1. **Plan** — Use planner agent, identify dependencies and risks, break into phases\n2. **TDD** — Use tdd-guide agent, write tests first, implement, refactor\n3. **Review** — Use code-reviewer agent immediately, address CRITICAL/HIGH issues\n4. **Capture knowledge in the right place**\n   - Personal debugging notes, preferences, and temporary context → auto memory\n   - Team/project knowledge (architecture decisions, API changes, runbooks) → the project's existing docs structure\n   - If the current task already produces the relevant docs or code comments, do not duplicate the same information elsewhere\n   - If there is no obvious project doc location, ask before creating a new top-level file\n5. **Commit** — Conventional commits format, comprehensive PR summaries\n\n## Workflow Surface Policy\n\n- `skills/` is the canonical workflow surface.\n- New workflow contributions should land in `skills/` first.\n- `commands/` is a legacy slash-entry compatibility surface and should only be added or updated when a shim is still required for migration or cross-harness parity.\n\n## Git Workflow\n\n**Commit format:** `<type>: <description>` — Types: feat, fix, refactor, docs, test, chore, perf, ci\n\n**PR workflow:** Analyze full commit history → draft comprehensive summary → include test plan → push with `-u` flag.\n\n## Architecture Patterns\n\n**API response format:** Consistent envelope with success indicator, data payload, error message, and pagination metadata.\n\n**Repository pattern:** Encapsulate data access behind standard interface (findAll, findById, create, update, delete). Business logic depends on abstract interface, not storage mechanism.\n\n**Skeleton projects:** Search for battle-tested templates, evaluate with parallel agents (security, extensibility, relevance), clone best match, iterate within proven structure.\n\n## Performance\n\n**Context management:** Avoid last 20% of context window for large refactoring and multi-file features. Lower-sensitivity tasks (single edits, docs, simple fixes) tolerate higher utilization.\n\n**Build troubleshooting:** Use build-error-resolver agent → analyze errors → fix incrementally → verify after each fix.\n\n## Project Structure\n\n```\nagents/          — 22 specialized subagents\nskills/          — 78 workflow skills and domain knowledge\ncommands/        — 73 slash commands\nhooks/           — Trigger-based automations\nrules/           — Always-follow guidelines (common + python + cpp)\nscripts/         — Cross-platform Node.js utilities\nmcp-configs/     — 15 MCP server configurations\ntests/           — Test suite\n```\n\n`commands/` remains in the repo for compatibility, but the long-term direction is skills-first.\n\n## Success Metrics\n\n- All tests pass with 80%+ coverage\n- No security vulnerabilities\n- Code is readable and maintainable\n- Performance is acceptable\n- User requirements are met\n\n---\n\n# Codex Supplement (From RCC .codex/AGENTS.md)\n\n# RCC for Codex CLI\n\nThis supplements the root `AGENTS.md` with Codex-specific guidance. The root\nRCC instructions remain the canonical research workflow; this file describes how\nthat workflow is rendered into Codex-native project files.\n\n## Codex Is Not Claude Code\n\nClaude Code RCC is a runtime orchestration system:\n\n- Ben orchestrator running inside Claude Code\n- Agent/Task subagents\n- Claude hook events\n- `.claude/research-state.json`\n- automatic stage-gate and stage-record updates\n\nCodex RCC is a project-local rendered kit:\n\n- `AGENTS.md` instructions\n- `.codex/config.toml`\n- `.codex/agents/*.toml`\n- `.codex/prompts/*.md`\n- `.agents/skills/*`\n- explicit `.codex/scripts/rcc-codex-check.js` gates\n\nDo not claim Codex has full Claude Code stage-gate or stage-record parity. In\nCodex, gates are explicit prompt/checker steps unless a future state-lite layer\nis added.\n\n## Model Policy\n\nUse the current Codex default for simple interaction unless a task needs a\nspecific model. RCC-rendered Codex agents default to GPT-5.5 so research,\narchitecture, adversarial review, and security work keep a strong reasoning\nbaseline.\n\n| Task Type | Recommended Model |\n|---|---|\n| Routine coding, tests, formatting | Current Codex default, or GPT-5.4 when intentionally cost-optimized |\n| Debugging and local refactors | Current Codex default or GPT-5.5 for broad/ambiguous failures |\n| Complex architecture and research | GPT-5.5 |\n| Adversarial review and security review | GPT-5.5 |\n\n## Skills Discovery\n\nCodex loads project skills from `.agents/skills/`. Each selected RCC skill is\ninstalled as a folder with a `SKILL.md` entrypoint. The active profile controls\nwhich skills are rendered; avoid hard-coding skill counts in user-facing output.\n\n## Project Config\n\nTreat the target project's `.codex/config.toml` as the Codex baseline for RCC.\nThe project config contains repo-safe defaults such as sandbox policy, web\nsearch policy, MCP server definitions, multi-agent enablement, and role file\nreferences.\n\nUser-specific credentials, auth files, and personal global preferences stay in\nthe user's own Codex configuration. RCC project install must not write\n`~/.codex`, `~/.agents`, or `~/.claude`.\n\nRCC's canonical Codex section name for Context7 is\n`[mcp_servers.context7]`. The launcher package remains\n`@upstash/context7-mcp`; only the TOML section name is normalized for\nconsistency with `codex mcp list` and the reference config.\n\n## Multi-Agent Support\n\nCodex supports multi-agent workflows through `[features] multi_agent = true`\nand standalone role files under `.codex/agents/*.toml`.\n\n- Enable it in `.codex/config.toml` with `[features] multi_agent = true`\n- Define project-local role files under `.codex/agents/*.toml`\n- Include `name`, `description`, and `developer_instructions` in each role file\n- Use `/agent` inside Codex CLI to inspect and steer child agents\n\nRCC renders Claude agent markdown into Codex TOML roles. The TOML roles are\nCodex-native artifacts, not Claude Code Agent/Task definitions.\n\n## Commands And Prompts\n\nClaude slash commands are rendered into Codex prompt files under\n`.codex/prompts/`. The installed filenames intentionally keep the historical\n`ecc-*` prefix for compatibility with existing references, but the generated\nprompt copy should describe RCC.\n\n## Key Differences From Claude Code\n\n| Feature | Claude Code | Codex CLI |\n|---|---|---|\n| Context | `CLAUDE.md` plus `AGENTS.md` | `AGENTS.md` plus `.codex/config.toml` |\n| Agents | Agent/Task subagents | `/agent` and `.codex/agents/*.toml` roles |\n| Commands | Claude slash commands | Prompt files in `.codex/prompts/` |\n| Hooks | Full Claude hook runtime | Conservative Codex-safe subset plus explicit checker gates |\n| State | `.claude/research-state.json` automation | Explicit gates/checkers unless future state-lite is added |\n| Skills | Claude plugin skills | Project `.agents/skills/` |\n| MCP | Claude Code MCP config | Project `.codex/config.toml` and Codex MCP commands |\n\n## Security With Codex Hooks\n\nRCC installs a conservative Codex-native `.codex/hooks.json` generated from the\nClaude hook catalog. The installed subset avoids Claude-specific state paths and\nonly uses commands that are safe inside the target project. Do not add\nClaude-specific stage-record or stage-gate hooks to Codex without proving they\nwork under Codex hook events.\n\nBefore finalizing work in Codex, prefer explicit gates:\n\n```bash\nnode .codex/scripts/rcc-codex-check.js all\nnode .codex/scripts/rcc-codex-check.js research --changed\nnode .codex/scripts/rcc-codex-check.js quality --changed\nnode .codex/scripts/rcc-codex-check.js eval --log <file>\n```\n<!-- END RCC -->\n",
+      "beginMarker": "<!-- BEGIN RCC -->",
+      "endMarker": "<!-- END RCC -->"
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/architect.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/architect.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/ben.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/ben.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/build-error-resolver.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/build-error-resolver.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/code-architect.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/code-architect.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/code-explorer.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/code-explorer.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/code-reviewer.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/code-reviewer.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/codex-reviewer.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/codex-reviewer.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/cpp-build-resolver.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/cpp-build-resolver.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/cpp-reviewer.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/cpp-reviewer.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/database-reviewer.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/database-reviewer.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/doc-updater.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/doc-updater.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/docs-lookup.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/docs-lookup.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/e2e-runner.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/e2e-runner.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/paper-reviewer.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/paper-reviewer.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/performance-optimizer.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/performance-optimizer.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/planner.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/planner.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/python-reviewer.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/python-reviewer.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/pytorch-build-resolver.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/pytorch-build-resolver.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/refactor-cleaner.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/refactor-cleaner.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/researcher.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/researcher.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/security-reviewer.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/security-reviewer.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "agents-core",
+      "sourceRelativePath": "agents/tdd-guide.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/tdd-guide.toml",
+      "strategy": "render-codex-agent-toml",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/ablation.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-ablation.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/agent-sort.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-agent-sort.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/architect.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-architect.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/aside.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-aside.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/baseline.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-baseline.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/ben.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-ben.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/build-fix.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-build-fix.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/build.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-build.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/checkpoint.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-checkpoint.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/claw.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-claw.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/code-review.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-code-review.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/context-budget.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-context-budget.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/cpp-build.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-cpp-build.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/cpp-review.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-cpp-review.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/cpp-test.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-cpp-test.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/devfleet.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-devfleet.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/docs.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-docs.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/eval.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-eval.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/evolve.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-evolve.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/experiment.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-experiment.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/feature-dev.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-feature-dev.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/harness-audit.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-harness-audit.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/hookify-configure.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-hookify-configure.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/hookify-help.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-hookify-help.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/hookify-list.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-hookify-list.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/hookify.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-hookify.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/instinct-export.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-instinct-export.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/instinct-import.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-instinct-import.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/instinct-status.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-instinct-status.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/jira.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-jira.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/learn-eval.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-learn-eval.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/learn.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-learn.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/loop-start.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-loop-start.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/loop-status.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-loop-status.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/model-route.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-model-route.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/multi-execute.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-multi-execute.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/multi-plan.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-multi-plan.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/multi-workflow.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-multi-workflow.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/orchestrate.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-orchestrate.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/plan.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-plan.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/pm2.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-pm2.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/projects.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-projects.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/promote.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-promote.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/prompt-optimize.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-prompt-optimize.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/prp-commit.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-prp-commit.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/prp-implement.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-prp-implement.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/prp-plan.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-prp-plan.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/prp-pr.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-prp-pr.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/prp-prd.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-prp-prd.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/prune.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-prune.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/python-review.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-python-review.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/quality-gate.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-quality-gate.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/rcc-agent-watch.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-rcc-agent-watch.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/rcc-history.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-rcc-history.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/rcc-state.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-rcc-state.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/refactor-clean.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-refactor-clean.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/reproduce.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-reproduce.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/research.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-research.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/resume-session.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-resume-session.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/review-pr.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-review-pr.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/rules-distill.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-rules-distill.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/santa-loop.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-santa-loop.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/save-session.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-save-session.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/sessions.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-sessions.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/setup-pm.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-setup-pm.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/skill-create.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-skill-create.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/skill-health.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-skill-health.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/sweep.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-sweep.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/tdd.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-tdd.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/test-coverage.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-test-coverage.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/update-codemaps.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-update-codemaps.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/update-docs.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-update-docs.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "commands/verify.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-verify.md",
+      "strategy": "render-codex-command-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "codex/generated-prompts/ecc-tool-run-tests.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-tool-run-tests.md",
+      "strategy": "render-codex-extension-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "codex/generated-prompts/ecc-tool-check-coverage.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-tool-check-coverage.md",
+      "strategy": "render-codex-extension-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "codex/generated-prompts/ecc-tool-security-audit.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-tool-security-audit.md",
+      "strategy": "render-codex-extension-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "codex/generated-prompts/ecc-codex-check.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-codex-check.md",
+      "strategy": "render-codex-extension-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "codex/generated-prompts/ecc-codex-research-gate.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-codex-research-gate.md",
+      "strategy": "render-codex-extension-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "codex/generated-prompts/ecc-codex-quality-gate.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-codex-quality-gate.md",
+      "strategy": "render-codex-extension-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "codex/generated-prompts/ecc-codex-eval-gate.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-codex-eval-gate.md",
+      "strategy": "render-codex-extension-prompt",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "commands-core",
+      "sourceRelativePath": "codex/generated-prompts/ecc-extension-prompts-manifest.txt",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/prompts/ecc-extension-prompts-manifest.txt",
+      "strategy": "render-codex-extension-prompt-manifest",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/architect-write-scope.js",
+      "sourceRelativePath": "scripts/hooks/architect-write-scope.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/architect-write-scope.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/canonical-eval-detect.js",
+      "sourceRelativePath": "scripts/hooks/canonical-eval-detect.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/canonical-eval-detect.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/check-console-log.js",
+      "sourceRelativePath": "scripts/hooks/check-console-log.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/check-console-log.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/check-hook-enabled.js",
+      "sourceRelativePath": "scripts/hooks/check-hook-enabled.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/check-hook-enabled.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/checkpoint-gate.js",
+      "sourceRelativePath": "scripts/hooks/checkpoint-gate.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/checkpoint-gate.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/config-protection.js",
+      "sourceRelativePath": "scripts/hooks/config-protection.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/config-protection.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/cost-tracker.js",
+      "sourceRelativePath": "scripts/hooks/cost-tracker.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/cost-tracker.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/dataset-lock-check.js",
+      "sourceRelativePath": "scripts/hooks/dataset-lock-check.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/dataset-lock-check.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/desktop-notify.js",
+      "sourceRelativePath": "scripts/hooks/desktop-notify.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/desktop-notify.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/doc-file-warning.js",
+      "sourceRelativePath": "scripts/hooks/doc-file-warning.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/doc-file-warning.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/eval-regression-check.js",
+      "sourceRelativePath": "scripts/hooks/eval-regression-check.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/eval-regression-check.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/evaluate-session.js",
+      "sourceRelativePath": "scripts/hooks/evaluate-session.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/evaluate-session.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/governance-capture.js",
+      "sourceRelativePath": "scripts/hooks/governance-capture.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/governance-capture.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/gpu-profile-snapshot.js",
+      "sourceRelativePath": "scripts/hooks/gpu-profile-snapshot.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/gpu-profile-snapshot.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/mcp-health-check.js",
+      "sourceRelativePath": "scripts/hooks/mcp-health-check.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/mcp-health-check.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/post-bash-build-complete.js",
+      "sourceRelativePath": "scripts/hooks/post-bash-build-complete.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/post-bash-build-complete.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/post-bash-command-log.js",
+      "sourceRelativePath": "scripts/hooks/post-bash-command-log.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/post-bash-command-log.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/post-bash-pr-created.js",
+      "sourceRelativePath": "scripts/hooks/post-bash-pr-created.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/post-bash-pr-created.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/post-edit-accumulator.js",
+      "sourceRelativePath": "scripts/hooks/post-edit-accumulator.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/post-edit-accumulator.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/post-edit-format.js",
+      "sourceRelativePath": "scripts/hooks/post-edit-format.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/post-edit-format.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/post-edit-typecheck.js",
+      "sourceRelativePath": "scripts/hooks/post-edit-typecheck.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/post-edit-typecheck.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/pre-bash-commit-quality.js",
+      "sourceRelativePath": "scripts/hooks/pre-bash-commit-quality.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/pre-bash-commit-quality.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/pre-bash-git-push-reminder.js",
+      "sourceRelativePath": "scripts/hooks/pre-bash-git-push-reminder.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/pre-bash-git-push-reminder.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/pre-bash-research-docker-check.js",
+      "sourceRelativePath": "scripts/hooks/pre-bash-research-docker-check.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/pre-bash-research-docker-check.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/pre-bash-tmux-reminder.js",
+      "sourceRelativePath": "scripts/hooks/pre-bash-tmux-reminder.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/pre-bash-tmux-reminder.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/pre-compact.js",
+      "sourceRelativePath": "scripts/hooks/pre-compact.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/pre-compact.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/precompact-save-state.js",
+      "sourceRelativePath": "scripts/hooks/precompact-save-state.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/precompact-save-state.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/quality-gate.js",
+      "sourceRelativePath": "scripts/hooks/quality-gate.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/quality-gate.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/research-bottleneck-gate.js",
+      "sourceRelativePath": "scripts/hooks/research-bottleneck-gate.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/research-bottleneck-gate.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/research-citation-check.js",
+      "sourceRelativePath": "scripts/hooks/research-citation-check.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/research-citation-check.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/run-with-flags-shell.sh",
+      "sourceRelativePath": "scripts/hooks/run-with-flags-shell.sh",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/run-with-flags-shell.sh",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/run-with-flags.js",
+      "sourceRelativePath": "scripts/hooks/run-with-flags.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/run-with-flags.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/session-end-marker.js",
+      "sourceRelativePath": "scripts/hooks/session-end-marker.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/session-end-marker.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/session-end.js",
+      "sourceRelativePath": "scripts/hooks/session-end.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/session-end.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/session-start-bootstrap.js",
+      "sourceRelativePath": "scripts/hooks/session-start-bootstrap.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/session-start-bootstrap.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/session-start.js",
+      "sourceRelativePath": "scripts/hooks/session-start.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/session-start.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/stage-gate.js",
+      "sourceRelativePath": "scripts/hooks/stage-gate.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/stage-gate.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/stage-record.js",
+      "sourceRelativePath": "scripts/hooks/stage-record.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/stage-record.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/stop-format-typecheck.js",
+      "sourceRelativePath": "scripts/hooks/stop-format-typecheck.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/stop-format-typecheck.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/suggest-compact.js",
+      "sourceRelativePath": "scripts/hooks/suggest-compact.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/suggest-compact.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/hooks/sweep-launch-detect.js",
+      "sourceRelativePath": "scripts/hooks/sweep-launch-detect.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/hooks/sweep-launch-detect.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/agent-compress.js",
+      "sourceRelativePath": "scripts/lib/agent-compress.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/agent-compress.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/codex-invocation-evidence.js",
+      "sourceRelativePath": "scripts/lib/codex-invocation-evidence.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/codex-invocation-evidence.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/codex/render-install.js",
+      "sourceRelativePath": "scripts/lib/codex/render-install.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/codex/render-install.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/copilot/render-install.js",
+      "sourceRelativePath": "scripts/lib/copilot/render-install.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/copilot/render-install.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/cursor/render-install.js",
+      "sourceRelativePath": "scripts/lib/cursor/render-install.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/cursor/render-install.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/hook-flags.js",
+      "sourceRelativePath": "scripts/lib/hook-flags.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/hook-flags.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/inspection.js",
+      "sourceRelativePath": "scripts/lib/inspection.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/inspection.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install-executor.js",
+      "sourceRelativePath": "scripts/lib/install-executor.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install-executor.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install-lifecycle.js",
+      "sourceRelativePath": "scripts/lib/install-lifecycle.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install-lifecycle.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install-manifests.js",
+      "sourceRelativePath": "scripts/lib/install-manifests.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install-manifests.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install-state.js",
+      "sourceRelativePath": "scripts/lib/install-state.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install-state.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install-targets/claude-home.js",
+      "sourceRelativePath": "scripts/lib/install-targets/claude-home.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install-targets/claude-home.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install-targets/codex-home.js",
+      "sourceRelativePath": "scripts/lib/install-targets/codex-home.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install-targets/codex-home.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install-targets/codex-project.js",
+      "sourceRelativePath": "scripts/lib/install-targets/codex-project.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install-targets/codex-project.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install-targets/copilot-project.js",
+      "sourceRelativePath": "scripts/lib/install-targets/copilot-project.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install-targets/copilot-project.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install-targets/cursor-cli-project.js",
+      "sourceRelativePath": "scripts/lib/install-targets/cursor-cli-project.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install-targets/cursor-cli-project.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install-targets/cursor-project.js",
+      "sourceRelativePath": "scripts/lib/install-targets/cursor-project.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install-targets/cursor-project.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install-targets/helpers.js",
+      "sourceRelativePath": "scripts/lib/install-targets/helpers.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install-targets/helpers.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install-targets/registry.js",
+      "sourceRelativePath": "scripts/lib/install-targets/registry.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install-targets/registry.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install/apply.js",
+      "sourceRelativePath": "scripts/lib/install/apply.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install/apply.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install/config.js",
+      "sourceRelativePath": "scripts/lib/install/config.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install/config.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install/request.js",
+      "sourceRelativePath": "scripts/lib/install/request.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install/request.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/install/runtime.js",
+      "sourceRelativePath": "scripts/lib/install/runtime.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/install/runtime.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/mcp-config.js",
+      "sourceRelativePath": "scripts/lib/mcp-config.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/mcp-config.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/observer-sessions.js",
+      "sourceRelativePath": "scripts/lib/observer-sessions.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/observer-sessions.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/orchestration-session.js",
+      "sourceRelativePath": "scripts/lib/orchestration-session.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/orchestration-session.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/package-manager.d.ts",
+      "sourceRelativePath": "scripts/lib/package-manager.d.ts",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/package-manager.d.ts",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/package-manager.js",
+      "sourceRelativePath": "scripts/lib/package-manager.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/package-manager.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/project-detect.js",
+      "sourceRelativePath": "scripts/lib/project-detect.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/project-detect.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/research-glob.js",
+      "sourceRelativePath": "scripts/lib/research-glob.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/research-glob.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/resolve-formatter.js",
+      "sourceRelativePath": "scripts/lib/resolve-formatter.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/resolve-formatter.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/resolve-rcc-root.js",
+      "sourceRelativePath": "scripts/lib/resolve-rcc-root.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/resolve-rcc-root.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/session-adapters/canonical-session.js",
+      "sourceRelativePath": "scripts/lib/session-adapters/canonical-session.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/session-adapters/canonical-session.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/session-adapters/claude-history.js",
+      "sourceRelativePath": "scripts/lib/session-adapters/claude-history.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/session-adapters/claude-history.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/session-adapters/dmux-tmux.js",
+      "sourceRelativePath": "scripts/lib/session-adapters/dmux-tmux.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/session-adapters/dmux-tmux.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/session-adapters/registry.js",
+      "sourceRelativePath": "scripts/lib/session-adapters/registry.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/session-adapters/registry.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/session-aliases.d.ts",
+      "sourceRelativePath": "scripts/lib/session-aliases.d.ts",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/session-aliases.d.ts",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/session-aliases.js",
+      "sourceRelativePath": "scripts/lib/session-aliases.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/session-aliases.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/session-manager.d.ts",
+      "sourceRelativePath": "scripts/lib/session-manager.d.ts",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/session-manager.d.ts",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/session-manager.js",
+      "sourceRelativePath": "scripts/lib/session-manager.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/session-manager.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/shell-split.js",
+      "sourceRelativePath": "scripts/lib/shell-split.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/shell-split.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/skill-evolution/dashboard.js",
+      "sourceRelativePath": "scripts/lib/skill-evolution/dashboard.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/skill-evolution/dashboard.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/skill-evolution/health.js",
+      "sourceRelativePath": "scripts/lib/skill-evolution/health.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/skill-evolution/health.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/skill-evolution/index.js",
+      "sourceRelativePath": "scripts/lib/skill-evolution/index.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/skill-evolution/index.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/skill-evolution/provenance.js",
+      "sourceRelativePath": "scripts/lib/skill-evolution/provenance.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/skill-evolution/provenance.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/skill-evolution/tracker.js",
+      "sourceRelativePath": "scripts/lib/skill-evolution/tracker.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/skill-evolution/tracker.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/skill-evolution/versioning.js",
+      "sourceRelativePath": "scripts/lib/skill-evolution/versioning.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/skill-evolution/versioning.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/skill-improvement/amendify.js",
+      "sourceRelativePath": "scripts/lib/skill-improvement/amendify.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/skill-improvement/amendify.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/skill-improvement/evaluate.js",
+      "sourceRelativePath": "scripts/lib/skill-improvement/evaluate.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/skill-improvement/evaluate.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/skill-improvement/health.js",
+      "sourceRelativePath": "scripts/lib/skill-improvement/health.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/skill-improvement/health.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/skill-improvement/observations.js",
+      "sourceRelativePath": "scripts/lib/skill-improvement/observations.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/skill-improvement/observations.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/state-store/index.js",
+      "sourceRelativePath": "scripts/lib/state-store/index.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/state-store/index.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/state-store/migrations.js",
+      "sourceRelativePath": "scripts/lib/state-store/migrations.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/state-store/migrations.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/state-store/queries.js",
+      "sourceRelativePath": "scripts/lib/state-store/queries.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/state-store/queries.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/state-store/schema.js",
+      "sourceRelativePath": "scripts/lib/state-store/schema.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/state-store/schema.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/subagent-stage-map.js",
+      "sourceRelativePath": "scripts/lib/subagent-stage-map.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/subagent-stage-map.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/tmux-worktree-orchestrator.js",
+      "sourceRelativePath": "scripts/lib/tmux-worktree-orchestrator.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/tmux-worktree-orchestrator.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/utils.d.ts",
+      "sourceRelativePath": "scripts/lib/utils.d.ts",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/utils.d.ts",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/utils.js",
+      "sourceRelativePath": "scripts/lib/utils.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/utils.js",
+      "strategy": "codex-hook-runtime-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "hooks-runtime",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/codex/rcc-codex-check.js",
+      "sourceRelativePath": "scripts/codex/rcc-codex-check.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/rcc-codex-check.js",
+      "strategy": "codex-project-stage-gate-checker",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "hooks-runtime",
+      "sourceRelativePath": "hooks/hooks.json",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/hooks.json",
+      "strategy": "render-codex-safe-hooks",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "render-template",
+      "moduleId": "platform-configs",
+      "sourceRelativePath": ".codex/config.toml",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/config.toml",
+      "strategy": "render-codex-project-config",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "platform-configs",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/.codex/agents/docs-researcher.toml",
+      "sourceRelativePath": ".codex/agents/docs-researcher.toml",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/docs-researcher.toml",
+      "strategy": "codex-native-agent-samples",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "platform-configs",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/.codex/agents/explorer.toml",
+      "sourceRelativePath": ".codex/agents/explorer.toml",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/explorer.toml",
+      "strategy": "codex-native-agent-samples",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "platform-configs",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/.codex/agents/reviewer.toml",
+      "sourceRelativePath": ".codex/agents/reviewer.toml",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/agents/reviewer.toml",
+      "strategy": "codex-native-agent-samples",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "platform-configs",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/mcp-configs/mcp-servers.json",
+      "sourceRelativePath": "mcp-configs/mcp-servers.json",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/mcp-configs/mcp-servers.json",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "platform-configs",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/setup-package-manager.js",
+      "sourceRelativePath": "scripts/setup-package-manager.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/setup-package-manager.js",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "framework-language",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/api-design/SKILL.md",
+      "sourceRelativePath": "skills/api-design/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/api-design/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "framework-language",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/coding-standards/SKILL.md",
+      "sourceRelativePath": "skills/coding-standards/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/coding-standards/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "framework-language",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/cpp-coding-standards/SKILL.md",
+      "sourceRelativePath": "skills/cpp-coding-standards/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/cpp-coding-standards/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "framework-language",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/cpp-testing/SKILL.md",
+      "sourceRelativePath": "skills/cpp-testing/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/cpp-testing/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "framework-language",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/hexagonal-architecture/SKILL.md",
+      "sourceRelativePath": "skills/hexagonal-architecture/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/hexagonal-architecture/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "framework-language",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/mcp-server-patterns/SKILL.md",
+      "sourceRelativePath": "skills/mcp-server-patterns/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/mcp-server-patterns/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "framework-language",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/python-patterns/SKILL.md",
+      "sourceRelativePath": "skills/python-patterns/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/python-patterns/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "framework-language",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/python-testing/SKILL.md",
+      "sourceRelativePath": "skills/python-testing/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/python-testing/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "framework-language",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/pytorch-patterns/SKILL.md",
+      "sourceRelativePath": "skills/pytorch-patterns/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/pytorch-patterns/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "database",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/clickhouse-io/SKILL.md",
+      "sourceRelativePath": "skills/clickhouse-io/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/clickhouse-io/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "database",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/database-migrations/SKILL.md",
+      "sourceRelativePath": "skills/database-migrations/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/database-migrations/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "database",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/postgres-patterns/SKILL.md",
+      "sourceRelativePath": "skills/postgres-patterns/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/postgres-patterns/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/agent-introspection-debugging/SKILL.md",
+      "sourceRelativePath": "skills/agent-introspection-debugging/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/agent-introspection-debugging/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/agent-sort/SKILL.md",
+      "sourceRelativePath": "skills/agent-sort/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/agent-sort/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/ai-regression-testing/SKILL.md",
+      "sourceRelativePath": "skills/ai-regression-testing/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/ai-regression-testing/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/architecture-decision-records/SKILL.md",
+      "sourceRelativePath": "skills/architecture-decision-records/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/architecture-decision-records/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/benchmark/SKILL.md",
+      "sourceRelativePath": "skills/benchmark/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/benchmark/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/ck/SKILL.md",
+      "sourceRelativePath": "skills/ck/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/ck/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/ck/commands/forget.mjs",
+      "sourceRelativePath": "skills/ck/commands/forget.mjs",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/ck/commands/forget.mjs",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/ck/commands/info.mjs",
+      "sourceRelativePath": "skills/ck/commands/info.mjs",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/ck/commands/info.mjs",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/ck/commands/init.mjs",
+      "sourceRelativePath": "skills/ck/commands/init.mjs",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/ck/commands/init.mjs",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/ck/commands/list.mjs",
+      "sourceRelativePath": "skills/ck/commands/list.mjs",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/ck/commands/list.mjs",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/ck/commands/migrate.mjs",
+      "sourceRelativePath": "skills/ck/commands/migrate.mjs",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/ck/commands/migrate.mjs",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/ck/commands/resume.mjs",
+      "sourceRelativePath": "skills/ck/commands/resume.mjs",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/ck/commands/resume.mjs",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/ck/commands/save.mjs",
+      "sourceRelativePath": "skills/ck/commands/save.mjs",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/ck/commands/save.mjs",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/ck/commands/shared.mjs",
+      "sourceRelativePath": "skills/ck/commands/shared.mjs",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/ck/commands/shared.mjs",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/ck/hooks/session-start.mjs",
+      "sourceRelativePath": "skills/ck/hooks/session-start.mjs",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/ck/hooks/session-start.mjs",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/code-tour/SKILL.md",
+      "sourceRelativePath": "skills/code-tour/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/code-tour/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/codebase-onboarding/SKILL.md",
+      "sourceRelativePath": "skills/codebase-onboarding/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/codebase-onboarding/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/configure-rcc/SKILL.md",
+      "sourceRelativePath": "skills/configure-rcc/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/configure-rcc/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/continuous-learning/SKILL.md",
+      "sourceRelativePath": "skills/continuous-learning/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/continuous-learning/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/continuous-learning/config.json",
+      "sourceRelativePath": "skills/continuous-learning/config.json",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/continuous-learning/config.json",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/continuous-learning/evaluate-session.sh",
+      "sourceRelativePath": "skills/continuous-learning/evaluate-session.sh",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/continuous-learning/evaluate-session.sh",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/continuous-learning-v2/SKILL.md",
+      "sourceRelativePath": "skills/continuous-learning-v2/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/continuous-learning-v2/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/continuous-learning-v2/agents/observer-loop.sh",
+      "sourceRelativePath": "skills/continuous-learning-v2/agents/observer-loop.sh",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/continuous-learning-v2/agents/observer-loop.sh",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/continuous-learning-v2/agents/observer.md",
+      "sourceRelativePath": "skills/continuous-learning-v2/agents/observer.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/continuous-learning-v2/agents/observer.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/continuous-learning-v2/agents/session-guardian.sh",
+      "sourceRelativePath": "skills/continuous-learning-v2/agents/session-guardian.sh",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/continuous-learning-v2/agents/session-guardian.sh",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/continuous-learning-v2/agents/start-observer.sh",
+      "sourceRelativePath": "skills/continuous-learning-v2/agents/start-observer.sh",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/continuous-learning-v2/agents/start-observer.sh",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/continuous-learning-v2/config.json",
+      "sourceRelativePath": "skills/continuous-learning-v2/config.json",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/continuous-learning-v2/config.json",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/continuous-learning-v2/hooks/observe.sh",
+      "sourceRelativePath": "skills/continuous-learning-v2/hooks/observe.sh",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/continuous-learning-v2/hooks/observe.sh",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/continuous-learning-v2/scripts/detect-project.sh",
+      "sourceRelativePath": "skills/continuous-learning-v2/scripts/detect-project.sh",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/continuous-learning-v2/scripts/detect-project.sh",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/continuous-learning-v2/scripts/instinct-cli.py",
+      "sourceRelativePath": "skills/continuous-learning-v2/scripts/instinct-cli.py",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/continuous-learning-v2/scripts/instinct-cli.py",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/continuous-learning-v2/scripts/test_parse_instinct.py",
+      "sourceRelativePath": "skills/continuous-learning-v2/scripts/test_parse_instinct.py",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/continuous-learning-v2/scripts/test_parse_instinct.py",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/council/SKILL.md",
+      "sourceRelativePath": "skills/council/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/council/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/eval-harness/SKILL.md",
+      "sourceRelativePath": "skills/eval-harness/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/eval-harness/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/git-workflow/SKILL.md",
+      "sourceRelativePath": "skills/git-workflow/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/git-workflow/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/github-ops/SKILL.md",
+      "sourceRelativePath": "skills/github-ops/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/github-ops/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/hookify-rules/SKILL.md",
+      "sourceRelativePath": "skills/hookify-rules/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/hookify-rules/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/iterative-retrieval/SKILL.md",
+      "sourceRelativePath": "skills/iterative-retrieval/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/iterative-retrieval/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/repo-scan/SKILL.md",
+      "sourceRelativePath": "skills/repo-scan/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/repo-scan/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/rules-distill/SKILL.md",
+      "sourceRelativePath": "skills/rules-distill/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/rules-distill/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/rules-distill/scripts/scan-rules.sh",
+      "sourceRelativePath": "skills/rules-distill/scripts/scan-rules.sh",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/rules-distill/scripts/scan-rules.sh",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/rules-distill/scripts/scan-skills.sh",
+      "sourceRelativePath": "skills/rules-distill/scripts/scan-skills.sh",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/rules-distill/scripts/scan-skills.sh",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/safety-guard/SKILL.md",
+      "sourceRelativePath": "skills/safety-guard/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/safety-guard/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/.gitignore",
+      "sourceRelativePath": "skills/skill-comply/.gitignore",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/.gitignore",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/SKILL.md",
+      "sourceRelativePath": "skills/skill-comply/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/fixtures/compliant_trace.jsonl",
+      "sourceRelativePath": "skills/skill-comply/fixtures/compliant_trace.jsonl",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/fixtures/compliant_trace.jsonl",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/fixtures/noncompliant_trace.jsonl",
+      "sourceRelativePath": "skills/skill-comply/fixtures/noncompliant_trace.jsonl",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/fixtures/noncompliant_trace.jsonl",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/fixtures/tdd_spec.yaml",
+      "sourceRelativePath": "skills/skill-comply/fixtures/tdd_spec.yaml",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/fixtures/tdd_spec.yaml",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/prompts/classifier.md",
+      "sourceRelativePath": "skills/skill-comply/prompts/classifier.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/prompts/classifier.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/prompts/scenario_generator.md",
+      "sourceRelativePath": "skills/skill-comply/prompts/scenario_generator.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/prompts/scenario_generator.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/prompts/spec_generator.md",
+      "sourceRelativePath": "skills/skill-comply/prompts/spec_generator.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/prompts/spec_generator.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/pyproject.toml",
+      "sourceRelativePath": "skills/skill-comply/pyproject.toml",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/pyproject.toml",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/scripts/__init__.py",
+      "sourceRelativePath": "skills/skill-comply/scripts/__init__.py",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/scripts/__init__.py",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/scripts/classifier.py",
+      "sourceRelativePath": "skills/skill-comply/scripts/classifier.py",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/scripts/classifier.py",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/scripts/grader.py",
+      "sourceRelativePath": "skills/skill-comply/scripts/grader.py",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/scripts/grader.py",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/scripts/parser.py",
+      "sourceRelativePath": "skills/skill-comply/scripts/parser.py",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/scripts/parser.py",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/scripts/report.py",
+      "sourceRelativePath": "skills/skill-comply/scripts/report.py",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/scripts/report.py",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/scripts/run.py",
+      "sourceRelativePath": "skills/skill-comply/scripts/run.py",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/scripts/run.py",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/scripts/runner.py",
+      "sourceRelativePath": "skills/skill-comply/scripts/runner.py",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/scripts/runner.py",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/scripts/scenario_generator.py",
+      "sourceRelativePath": "skills/skill-comply/scripts/scenario_generator.py",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/scripts/scenario_generator.py",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/scripts/spec_generator.py",
+      "sourceRelativePath": "skills/skill-comply/scripts/spec_generator.py",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/scripts/spec_generator.py",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/scripts/utils.py",
+      "sourceRelativePath": "skills/skill-comply/scripts/utils.py",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/scripts/utils.py",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/tests/test_grader.py",
+      "sourceRelativePath": "skills/skill-comply/tests/test_grader.py",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/tests/test_grader.py",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-comply/tests/test_parser.py",
+      "sourceRelativePath": "skills/skill-comply/tests/test_parser.py",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-comply/tests/test_parser.py",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-stocktake/SKILL.md",
+      "sourceRelativePath": "skills/skill-stocktake/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-stocktake/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-stocktake/scripts/quick-diff.sh",
+      "sourceRelativePath": "skills/skill-stocktake/scripts/quick-diff.sh",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-stocktake/scripts/quick-diff.sh",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-stocktake/scripts/save-results.sh",
+      "sourceRelativePath": "skills/skill-stocktake/scripts/save-results.sh",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-stocktake/scripts/save-results.sh",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/skill-stocktake/scripts/scan.sh",
+      "sourceRelativePath": "skills/skill-stocktake/scripts/scan.sh",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/skill-stocktake/scripts/scan.sh",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/strategic-compact/SKILL.md",
+      "sourceRelativePath": "skills/strategic-compact/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/strategic-compact/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/strategic-compact/suggest-compact.sh",
+      "sourceRelativePath": "skills/strategic-compact/suggest-compact.sh",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/strategic-compact/suggest-compact.sh",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/tdd-workflow/SKILL.md",
+      "sourceRelativePath": "skills/tdd-workflow/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/tdd-workflow/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/verification-loop/SKILL.md",
+      "sourceRelativePath": "skills/verification-loop/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/verification-loop/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "workflow-quality",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/workspace-surface-audit/SKILL.md",
+      "sourceRelativePath": "skills/workspace-surface-audit/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/workspace-surface-audit/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "security",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/security-review/SKILL.md",
+      "sourceRelativePath": "skills/security-review/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/security-review/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "security",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/security-review/cloud-infrastructure-security.md",
+      "sourceRelativePath": "skills/security-review/cloud-infrastructure-security.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/security-review/cloud-infrastructure-security.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "security",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/security-scan/SKILL.md",
+      "sourceRelativePath": "skills/security-scan/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/security-scan/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/claude-api/SKILL.md",
+      "sourceRelativePath": "skills/claude-api/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/claude-api/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/dataset-versioning/SKILL.md",
+      "sourceRelativePath": "skills/dataset-versioning/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/dataset-versioning/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/deep-research/SKILL.md",
+      "sourceRelativePath": "skills/deep-research/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/deep-research/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/documentation-lookup/SKILL.md",
+      "sourceRelativePath": "skills/documentation-lookup/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/documentation-lookup/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/exa-search/SKILL.md",
+      "sourceRelativePath": "skills/exa-search/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/exa-search/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/experiment-tracking/SKILL.md",
+      "sourceRelativePath": "skills/experiment-tracking/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/experiment-tracking/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/hpo-sweep/SKILL.md",
+      "sourceRelativePath": "skills/hpo-sweep/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/hpo-sweep/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/knowledge-ops/SKILL.md",
+      "sourceRelativePath": "skills/knowledge-ops/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/knowledge-ops/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/market-research/SKILL.md",
+      "sourceRelativePath": "skills/market-research/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/market-research/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/paper-review-iterate/SKILL.md",
+      "sourceRelativePath": "skills/paper-review-iterate/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/paper-review-iterate/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/research-ops/SKILL.md",
+      "sourceRelativePath": "skills/research-ops/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/research-ops/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/remote-eval/SKILL.md",
+      "sourceRelativePath": "skills/remote-eval/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/remote-eval/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/remote/artifact-manifest.js",
+      "sourceRelativePath": "scripts/remote/artifact-manifest.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/remote/artifact-manifest.js",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/remote/collect-artifacts.js",
+      "sourceRelativePath": "scripts/remote/collect-artifacts.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/remote/collect-artifacts.js",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/remote/lease-store.js",
+      "sourceRelativePath": "scripts/remote/lease-store.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/remote/lease-store.js",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/remote/probe-resource.js",
+      "sourceRelativePath": "scripts/remote/probe-resource.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/remote/probe-resource.js",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/remote/remote-cpp-eval.js",
+      "sourceRelativePath": "scripts/remote/remote-cpp-eval.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/remote/remote-cpp-eval.js",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/remote/remote-eval-run.js",
+      "sourceRelativePath": "scripts/remote/remote-eval-run.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/remote/remote-eval-run.js",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/remote/resource-registry.js",
+      "sourceRelativePath": "scripts/remote/resource-registry.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/remote/resource-registry.js",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "research-apis",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/scripts/lib/research-state.js",
+      "sourceRelativePath": "scripts/lib/research-state.js",
+      "destinationPath": "/Users/euntae/Project/tofslam/.codex/scripts/lib/research-state.js",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/agent-eval/SKILL.md",
+      "sourceRelativePath": "skills/agent-eval/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/agent-eval/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/agent-harness-construction/SKILL.md",
+      "sourceRelativePath": "skills/agent-harness-construction/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/agent-harness-construction/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/agentic-engineering/SKILL.md",
+      "sourceRelativePath": "skills/agentic-engineering/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/agentic-engineering/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/ai-first-engineering/SKILL.md",
+      "sourceRelativePath": "skills/ai-first-engineering/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/ai-first-engineering/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/autonomous-agent-harness/SKILL.md",
+      "sourceRelativePath": "skills/autonomous-agent-harness/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/autonomous-agent-harness/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/autonomous-loops/SKILL.md",
+      "sourceRelativePath": "skills/autonomous-loops/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/autonomous-loops/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/blueprint/SKILL.md",
+      "sourceRelativePath": "skills/blueprint/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/blueprint/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/claude-devfleet/SKILL.md",
+      "sourceRelativePath": "skills/claude-devfleet/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/claude-devfleet/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/content-hash-cache-pattern/SKILL.md",
+      "sourceRelativePath": "skills/content-hash-cache-pattern/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/content-hash-cache-pattern/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/context-budget/SKILL.md",
+      "sourceRelativePath": "skills/context-budget/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/context-budget/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/continuous-agent-loop/SKILL.md",
+      "sourceRelativePath": "skills/continuous-agent-loop/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/continuous-agent-loop/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/cost-aware-llm-pipeline/SKILL.md",
+      "sourceRelativePath": "skills/cost-aware-llm-pipeline/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/cost-aware-llm-pipeline/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/data-scraper-agent/SKILL.md",
+      "sourceRelativePath": "skills/data-scraper-agent/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/data-scraper-agent/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/enterprise-agent-ops/SKILL.md",
+      "sourceRelativePath": "skills/enterprise-agent-ops/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/enterprise-agent-ops/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/nanoclaw-repl/SKILL.md",
+      "sourceRelativePath": "skills/nanoclaw-repl/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/nanoclaw-repl/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/prompt-optimizer/SKILL.md",
+      "sourceRelativePath": "skills/prompt-optimizer/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/prompt-optimizer/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/ralphinho-rfc-pipeline/SKILL.md",
+      "sourceRelativePath": "skills/ralphinho-rfc-pipeline/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/ralphinho-rfc-pipeline/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/regex-vs-llm-structured-text/SKILL.md",
+      "sourceRelativePath": "skills/regex-vs-llm-structured-text/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/regex-vs-llm-structured-text/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/santa-method/SKILL.md",
+      "sourceRelativePath": "skills/santa-method/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/santa-method/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/search-first/SKILL.md",
+      "sourceRelativePath": "skills/search-first/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/search-first/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/token-budget-advisor/SKILL.md",
+      "sourceRelativePath": "skills/token-budget-advisor/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/token-budget-advisor/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agentic-patterns",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/team-builder/SKILL.md",
+      "sourceRelativePath": "skills/team-builder/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/team-builder/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "devops-infra",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/deployment-patterns/SKILL.md",
+      "sourceRelativePath": "skills/deployment-patterns/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/deployment-patterns/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "devops-infra",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/docker-patterns/SKILL.md",
+      "sourceRelativePath": "skills/docker-patterns/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/docker-patterns/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "devops-infra",
+      "sourcePath": "/Users/euntae/Project/claude/rcc/skills/docker-research-discipline/SKILL.md",
+      "sourceRelativePath": "skills/docker-research-discipline/SKILL.md",
+      "destinationPath": "/Users/euntae/Project/tofslam/.agents/skills/docker-research-discipline/SKILL.md",
+      "strategy": "codex-project-skill",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    }
+  ]
+}

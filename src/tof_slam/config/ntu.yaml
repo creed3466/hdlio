@@ -1,0 +1,123 @@
+# HDLIO NTU/Ouster sensor config.
+# Ouster OS1-16 (horizontal, 16ch x 1024, 10Hz) + VectorNav VN100 IMU (400Hz)
+
+use_sim_time: true
+
+# ---- Frame IDs ----
+map_frame: "map"
+base_frame: "base_link"
+
+# ---- Input topics ----
+imu_topic: "/imu/imu"
+lidar_topic: "/os1_cloud_node1/points"
+lidar_msg_type: "pointcloud2"
+
+# ---- Point timing ----
+point_time_field: "t"
+point_time_unit: "nsec"
+point_time_reference: "relative"
+
+# ---- IMU noise (CALIBRATED) ----
+imu_gyro_noise: 0.00001347
+imu_accel_noise: 0.001334
+imu_gyro_bias_noise: 0.0000000007076
+imu_accel_bias_noise: 0.000000187
+imu_gravity_z: -9.81
+imu_init_samples: 200
+
+# ---- Extrinsic (verified) ----
+extrinsic_x: -0.050
+extrinsic_y:  0.000
+extrinsic_z:  0.055
+
+# ---- Preprocessing ----
+# Testing: keep baseline stride=4/voxel=0.5 with code-level weight fixes
+frontend_voxel_size: 0.5
+frontend_stride: 4
+frontend_enable_undistortion: true
+frontend_min_distance: 1.0
+frontend_max_distance: 80.0
+frontend_scan_duration: 0.1
+frontend_init_imu_samples: 200
+
+# ---- IEKF (BASELINE EXACT) ----
+frontend_max_iterations: 7
+frontend_max_inner_iterations: 7
+frontend_convergence_threshold: 0.001
+frontend_lidar_noise_std: 0.025
+frontend_max_plane_distance: 0.3
+frontend_max_correspondences: 0
+
+# ---- Map (BASELINE EXACT) ----
+frontend_map_l0_voxel_size: 0.5
+frontend_voxel_hierarchy_factor: 3
+frontend_map_box_multiplier: 2.0
+frontend_min_l0_for_surfel: 2
+frontend_map_planarity_threshold: 0.06
+frontend_l0_ema_alpha_min: 0.02
+frontend_surfel_lock_frames: 30
+
+# ---- L2 Multi-Scale (BASELINE EXACT) ----
+frontend_enable_l2_correspondences: true
+frontend_l2_planarity_threshold: 0.12
+frontend_min_l1_for_l2_surfel: 4
+frontend_l2_noise_scale: 4.0              # C2: OS1-16 repetitive scan → clean L2 surfels; PSD-additive guarantees safety
+
+# ---- PointVoxelMap (BASELINE — surfel primary) ----
+frontend_pvmap_voxel_size: 0.5
+frontend_pvmap_max_points_per_voxel: 20
+frontend_pvmap_k_neighbors: 5
+frontend_pvmap_planarity_threshold: 0.10
+frontend_max_corr_per_l1: 0
+
+# ---- Degeneracy ----
+frontend_enable_degeneracy_detection: true
+frontend_degeneracy_threshold: 10.0
+frontend_degeneracy_ratio_threshold: 0.001
+frontend_degeneracy_soft_floor: 1.0
+
+# ---- Degeneracy-Adaptive EMA Alpha (code fix active) ----
+frontend_enable_degeneracy_adaptive_alpha: true
+frontend_degeneracy_alpha_scale: 1.0
+frontend_skip_map_update_degen_threshold: 0
+
+# ---- DDPO + DARBF: Bidirectional degeneracy feedback (paper Sec.VI) ----
+frontend_enable_degen_pvmap_override: true
+frontend_degen_pvmap_cos_threshold: 0.7
+frontend_pvmap_enable_degen_freeze: true
+
+# ---- Correspondence selection (unified) ----
+# disagree_use_sigma2: removed (dead param — no C++ pnh_.param() call, zero effect).
+
+# ---- Pseudo-observations ----
+frontend_enable_bias_pseudo_obs: true
+frontend_bias_bg_sigma: 0.01
+frontend_bias_ba_sigma: 0.5
+frontend_enable_velocity_pseudo_obs: true
+frontend_velocity_sigma: 3.0
+frontend_enable_gravity_norm_constraint: true
+frontend_gravity_norm_sigma: 0.01
+
+# ---- Covariance floor ----
+frontend_p_floor_rot: 0.000001
+frontend_p_floor_pos: 0.000001
+frontend_p_floor_vel: 0.0001
+frontend_p_floor_bias: 0.00000001
+frontend_p_floor_grav: 0.00000001
+
+# ---- A-matrix (SO(3) Left Jacobian) manifold correction ----
+frontend_enable_a_matrix_correction: true   # true = keep current behavior (NTU VIRAL works well)
+
+# ---- Weight model (v12 uniform-weight behavior for sparse 16ch) ----
+# sigma2_normal OFF: removes distance-dependent noise inflation (toxic for sparse outdoor)
+# sharing threshold=3, ref=3: v12 behavior — only down-weight when heavily shared
+frontend_enable_sigma2_normal: false
+frontend_sharing_weight_threshold: 3
+frontend_sharing_weight_ref: 3.0
+
+# ---- Deterministic queue (eliminate ROS1 callback scheduling non-determinism) ----
+deterministic_queue: true
+deterministic_queue_delay_ms: 5.0
+
+# ---- Debug ----
+frontend_enable_debug_timing: false

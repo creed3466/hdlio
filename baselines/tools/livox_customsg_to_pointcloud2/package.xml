@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>livox_customsg_to_pointcloud2</name>
+  <version>1.0.0</version>
+  <description>
+    Converts livox_ros_driver/CustomMsg to sensor_msgs/PointCloud2 with
+    per-point timestamp field for algorithms that expect standard PC2 input
+    (e.g., DLIO). Each point carries: x, y, z, intensity, timestamp (double).
+  </description>
+
+  <maintainer email="creed3466@gmail.com">Euntae Hong</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>livox_ros_driver</depend>
+
+  <export/>
+</package>

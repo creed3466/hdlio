@@ -1,0 +1,55 @@
+# Point-LIO config for M3DGR Avia sequences
+# Based on upstream Point-LIO avia.yaml with M3DGR topic remaps.
+common:
+    lid_topic:  "/livox/avia/lidar"
+    imu_topic:  "/livox/avia/imu"
+    con_frame: false
+    con_frame_num: 1
+    cut_frame: false
+    cut_frame_time_interval: 0.1
+    time_diff_lidar_to_imu: 0.0
+
+preprocess:
+    lidar_type: 1                # 1 = Livox
+    scan_line: 6
+    timestamp_unit: 1
+    blind: 0.5
+
+mapping:
+    imu_en: true
+    extrinsic_est_en: false
+    imu_time_inte: 0.005
+    lidar_time_inte: 0.1
+    satu_acc: 3.0
+    satu_gyro: 35
+    acc_norm: 1.0
+    lidar_meas_cov: 0.01
+    acc_cov_output: 500
+    gyr_cov_output: 1000
+    b_acc_cov: 0.0001
+    b_gyr_cov: 0.0001
+    imu_meas_acc_cov: 0.1
+    imu_meas_omg_cov: 0.1
+    gyr_cov_input: 0.01
+    acc_cov_input: 0.1
+    plane_thr: 0.1
+    match_s: 81
+    ivox_grid_resolution: 2.0
+    gravity: [0.0, 0.0, -9.810]
+    gravity_init: [0.0, 0.0, -9.810]
+    extrinsic_T: [ 0.04165, 0.02326, -0.0284 ]
+    extrinsic_R: [ 1, 0, 0,
+                   0, 1, 0,
+                   0, 0, 1 ]
+
+odometry:
+    publish_odometry_without_downsample: false
+
+publish:
+    path_en: true
+    scan_publish_en: false
+    scan_bodyframe_pub_en: false
+
+pcd_save:
+    pcd_save_en: false
+    interval: -1

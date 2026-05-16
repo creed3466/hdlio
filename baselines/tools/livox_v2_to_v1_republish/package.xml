@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>livox_v2_to_v1_republish</name>
+  <version>0.1.0</version>
+  <description>
+    Namespace-only republisher that forwards livox_ros_driver2/CustomMsg
+    messages (as recorded in M3DGR Mid-360 bags) onto a new topic typed as
+    livox_ros_driver/CustomMsg. Exploits the fact that the two message
+    definitions share the same MD5 (e4d6829bdfe657cb6c21a746c86b21a6), so
+    the wire bytes are identical and no field-level transformation is
+    performed.
+  </description>
+  <maintainer email="euntae@tofslam.local">Euntae Hong</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>topic_tools</depend>
+  <depend>livox_ros_driver</depend>
+
+  <!--
+    Intentionally NO dependency on livox_ros_driver2. The republisher uses
+    topic_tools::ShapeShifter, so we never need the v2 header. The v1
+    dependency is kept so that package.xml verifies the v1 workspace is
+    present (runtime consumers expect v1 message availability).
+  -->
+</package>

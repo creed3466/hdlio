@@ -1,0 +1,38 @@
+# FAST-LIO2 config for NTU VIRAL (Ouster OS1-16)
+# Reference: published FAST-LIO2 numbers on NTU VIRAL (SLICT paper Table IV).
+common:
+    lid_topic:  "/os1_cloud_node1/points"
+    imu_topic:  "/imu/imu"
+    time_sync_en: false
+    time_offset_lidar_to_imu: 0.0
+
+preprocess:
+    lidar_type: 3                # 3 = ouster
+    scan_line: 16                # OS1-16
+    scan_rate: 10
+    timestamp_unit: 3            # 3 = nanosecond (Ouster)
+    blind: 1.0
+
+mapping:
+    acc_cov: 0.1
+    gyr_cov: 0.1
+    b_acc_cov: 0.0001
+    b_gyr_cov: 0.0001
+    fov_degree:    180
+    det_range:     100.0
+    extrinsic_est_en: false
+    # NTU VIRAL lidar-imu extrinsic (from dataset yaml)
+    extrinsic_T: [ 0.050, 0.000, 0.055 ]
+    extrinsic_R: [ 1, 0, 0,
+                   0, 1, 0,
+                   0, 0, 1 ]
+
+publish:
+    path_en: true
+    scan_publish_en: false
+    dense_publish_en: false
+    scan_bodyframe_pub_en: false
+
+pcd_save:
+    pcd_save_en: false
+    interval: -1

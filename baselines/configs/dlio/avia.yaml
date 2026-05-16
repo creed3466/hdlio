@@ -1,0 +1,49 @@
+# DLIO config for M3DGR Avia sequences (feature/livox-support branch)
+#
+# Topics (set via launch args, not in this config):
+#   Livox:  /livox/avia/lidar   (livox_ros_driver/CustomMsg, native subscriber)
+#   IMU:    /livox/avia/imu
+#
+# Extrinsics: IMU-to-LiDAR from M3DGR Avia (same as FAST-LIO2 avia.yaml).
+# DLIO uses baselink2imu and baselink2lidar. For M3DGR, the body frame
+# coincides with the IMU frame, so baselink2imu = identity and
+# baselink2lidar = extrinsic_T from the dataset calibration.
+
+dlio:
+
+  version: 1.2.0
+
+  adaptive: true
+
+  pointcloud:
+    deskew: true
+    voxelize: true
+
+  imu:
+    calibration: true
+    # M3DGR Avia IMU publishes in m/s^2 (not g-units).
+    # normalized=false means DLIO uses accel values as-is without
+    # multiplying by gravity. Evidence: ig_lio avia.yaml analysis shows
+    # raw ||mean_acc|| = 9.78 m/s^2, confirming m/s^2 units.
+    normalized: false
+    intrinsics:
+      accel:
+        bias: [ 0.0, 0.0, 0.0 ]
+        sm:   [ 1.,  0.,  0.,
+                0.,  1.,  0.,
+                0.,  0.,  1. ]
+      gyro:
+        bias: [ 0.0, 0.0, 0.0 ]
+
+  extrinsics:
+    baselink2imu:
+      t: [ 0.0, 0.0, 0.0 ]
+      R: [ 1.,  0.,  0.,
+           0.,  1.,  0.,
+           0.,  0.,  1. ]
+    baselink2lidar:
+      # IMU->LiDAR translation from M3DGR Avia dataset
+      t: [ 0.04165, 0.02326, -0.0284 ]
+      R: [ 1.,  0.,  0.,
+           0.,  1.,  0.,
+           0.,  0.,  1. ]

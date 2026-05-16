@@ -1,0 +1,46 @@
+# DLIO config for NTU VIRAL (Ouster OS1-16)
+#
+# Topics (set via launch args, not in this config):
+#   Pointcloud: /os1_cloud_node1/points  (native PointCloud2, no conversion)
+#   IMU:        /imu/imu
+#
+# Extrinsics: from NTU VIRAL dataset calibration.
+# The Ouster OS1-16 has field "t" (uint32, nanoseconds since scan start).
+# DLIO auto-detects this as SensorType::OUSTER.
+
+dlio:
+
+  version: 1.2.0
+
+  adaptive: true
+
+  pointcloud:
+    deskew: true
+    voxelize: true
+
+  imu:
+    calibration: true
+    # NTU VIRAL VN100 IMU publishes in m/s^2 (not g-units).
+    # normalized=false means DLIO uses accel values as-is.
+    normalized: false
+    intrinsics:
+      accel:
+        bias: [ 0.0, 0.0, 0.0 ]
+        sm:   [ 1.,  0.,  0.,
+                0.,  1.,  0.,
+                0.,  0.,  1. ]
+      gyro:
+        bias: [ 0.0, 0.0, 0.0 ]
+
+  extrinsics:
+    baselink2imu:
+      t: [ 0.0, 0.0, 0.0 ]
+      R: [ 1.,  0.,  0.,
+           0.,  1.,  0.,
+           0.,  0.,  1. ]
+    baselink2lidar:
+      # IMU->LiDAR translation from NTU VIRAL calibration
+      t: [ 0.050, 0.000, 0.055 ]
+      R: [ 1.,  0.,  0.,
+           0.,  1.,  0.,
+           0.,  0.,  1. ]

@@ -1,0 +1,164 @@
+\relax 
+\citation{xu2021fastlio,xu2022fastlio2}
+\citation{xu2022fastlio2}
+\citation{cai2021ikdtree}
+\citation{bai2022fasterlio}
+\citation{chen2024iglio,yuan2022voxelmap}
+\citation{lv2025surfellio,nguyen2023slict}
+\citation{zhang2016degeneracy,li2025lodestar,park2025genzlio}
+\citation{yin2023m3dgr}
+\citation{nguyen2022ntuviral}
+\citation{he2023pointlio}
+\citation{chen2024iglio}
+\citation{shan2020liosam}
+\citation{nguyen2023slict}
+\citation{lv2025surfellio}
+\citation{xu2022fastlio2}
+\citation{cai2021ikdtree}
+\citation{he2023pointlio}
+\citation{bai2022fasterlio}
+\citation{shan2020liosam}
+\citation{vizzo2023kissicp}
+\citation{dellenbach2022cticp}
+\citation{chen2023dlio}
+\citation{forster2017manifold}
+\citation{segal2009gicp}
+\citation{koide2021vgicp}
+\citation{yuan2022voxelmap}
+\citation{lv2025surfellio}
+\citation{nguyen2023slict}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\newlabel{sec:intro}{{I}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Related Work}{1}{}\protected@file@percent }
+\newlabel{sec:related}{{II}{1}}
+\citation{zhang2016degeneracy}
+\citation{li2025lodestar}
+\citation{park2025genzlio}
+\citation{tuna2024lion}
+\citation{xu2021fastlio}
+\citation{lv2025surfellio}
+\@writefile{toc}{\contentsline {section}{\numberline {III}System Overview}{2}{}\protected@file@percent }
+\newlabel{sec:overview}{{III}{2}}
+\newlabel{eq:state}{{1}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Hierarchical Surfel Map}{2}{}\protected@file@percent }
+\newlabel{sec:map}{{IV}{2}}
+\newlabel{eq:ema}{{2}{2}}
+\newlabel{eq:normal_unc}{{3}{2}}
+\citation{xu2021fastlio}
+\citation{stewart1990matrix}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces System overview of HD-LIO. (a)\nobreakspace  {}Preprocess: IMU propagation and scan deskewing. (b)\nobreakspace  {}Hierarchical surfel map (Sec.\nobreakspace  {}IV\hbox {}): L0 centroids feed L1 PCA surfels that produce $\sigma ^2_n$; L2 provides regional stabilization; PVMap supplies kNN correspondences. (c)\nobreakspace  {}IEKF update (Sec.\nobreakspace  {}V\hbox {}): surfel and PVMap correspondences drive the state update; eigendecomposition detects degeneracy and feeds back to the map via three mechanisms (Sec.\nobreakspace  {}VI\hbox {}): alpha modulation, DDPO, and DARBF (dashed red arrows).}}{3}{}\protected@file@percent }
+\newlabel{fig:system}{{1}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}IEKF with Surfel-Derived Noise}{3}{}\protected@file@percent }
+\newlabel{sec:noise}{{V}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Information-form update}{3}{}\protected@file@percent }
+\newlabel{eq:jacobian}{{4}{3}}
+\newlabel{eq:info}{{5}{3}}
+\newlabel{eq:kalman}{{6}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Surfel-derived measurement noise}{3}{}\protected@file@percent }
+\newlabel{eq:noise}{{7}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Formal derivation of $\sigma ^2_n$}{3}{}\protected@file@percent }
+\newlabel{prop:sigma2n}{{1}{3}}
+\newlabel{eq:perturbation}{{8}{3}}
+\citation{xu2022fastlio2}
+\citation{zhang2016degeneracy,li2025lodestar,park2025genzlio}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces IEKF update with surfel-derived noise}}{4}{}\protected@file@percent }
+\newlabel{alg:iekf}{{1}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Hybrid correspondence finding}{4}{}\protected@file@percent }
+\newlabel{sec:corr}{{\mbox  {V-D}}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Bidirectional Degeneracy Feedback}{4}{}\protected@file@percent }
+\newlabel{sec:degen}{{VI}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Drift-map positive feedback}{4}{}\protected@file@percent }
+\newlabel{eq:drift_feedback}{{9}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-B}}Degeneracy detection}{4}{}\protected@file@percent }
+\newlabel{eq:eigen_degen}{{10}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-C}}Map-side degeneracy response}{4}{}\protected@file@percent }
+\newlabel{eq:alpha_mod}{{11}{4}}
+\citation{yin2023m3dgr}
+\citation{nguyen2022ntuviral}
+\citation{xu2022fastlio2}
+\citation{he2023pointlio}
+\citation{chen2024iglio}
+\citation{shan2020liosam}
+\citation{yin2023m3dgr,nguyen2022ntuviral}
+\citation{chen2024iglio,he2023pointlio}
+\citation{chen2023dlio}
+\citation{yuan2022voxelmap}
+\citation{lv2025surfellio}
+\citation{grupp2017evo}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Bidirectional Degeneracy Feedback}}{5}{}\protected@file@percent }
+\newlabel{alg:degen}{{2}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-D}}Convergence analysis}{5}{}\protected@file@percent }
+\newlabel{prop:convergence}{{2}{5}}
+\newlabel{eq:drift_corrected}{{12}{5}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Experimental Evaluation}{5}{}\protected@file@percent }
+\newlabel{sec:exp}{{VII}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-A}}Datasets, Baselines, and Setup}{5}{}\protected@file@percent }
+\citation{nguyen2023slict}
+\citation{xu2022fastlio2}
+\citation{he2023pointlio}
+\citation{chen2024iglio}
+\citation{shan2020liosam}
+\citation{nguyen2023slict}
+\citation{lv2025surfellio}
+\citation{lv2025surfellio}
+\citation{chen2024geode}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Per-sequence ATE RMSE on NTU VIRAL (discrete-time methods). HD-LIO achieves 19\% mean reduction vs.\ LIO-SAM, the lowest among IEKF-based methods.}}{6}{}\protected@file@percent }
+\newlabel{fig:ate_ntu}{{2}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-B}}Results}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Trajectory comparison on NTU VIRAL nya\_01. HD-LIO (\SI {0.049}{\meter }) tracks the ground truth most closely among all discrete-time methods. The zoom inset highlights the region of maximum baseline divergence, where iG-LIO (\SI {0.136}{\meter }) deviates visibly.}}{6}{}\protected@file@percent }
+\newlabel{fig:traj_ntu1}{{3}{6}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces ATE RMSE [\si {\meter }] on NTU VIRAL (single OS1-16, 16 beams, 360\textdegree {} FOV). Bold = lowest. ``---'' = divergence. ${}^*$Mean excludes diverged sequences. All methods use a single LiDAR for fair comparison.}}{7}{}\protected@file@percent }
+\newlabel{tab:ntuviral}{{I}{7}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces ATE RMSE [\si {\meter }] on M3DGR. Left: Avia (70\textdegree {} FOV). Right: Mid-360 (360\textdegree {} FOV). Bold = lowest. ``---'' = divergence. ${}^*$Mean excludes diverged sequences. ${}^\dagger $Surfel-LIO values from\nobreakspace  {}\cite  {lv2025surfellio}.}}{7}{}\protected@file@percent }
+\newlabel{tab:m3dgr}{{II}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-C}}Timing}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-D}}Ablation Study}{7}{}\protected@file@percent }
+\newlabel{sec:ablation}{{\mbox  {VII-D}}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Discussion}{7}{}\protected@file@percent }
+\newlabel{sec:discussion}{{VIII}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Reconstructed point cloud maps across all three datasets. Top row: M3DGR Avia (Dark01, Varying-illu03) and Mid-360 (Dark01, Dynamic04). Bottom row: Mid-360 (Occlusion03) and NTU VIRAL (eee\_02, nya\_01, sbs\_01). Height-colored BEV with 0.1\,m voxel downsampling; red-box insets show structural detail.}}{8}{}\protected@file@percent }
+\newlabel{fig:map}{{4}{8}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces ATE RMSE [\si {\meter }] on GEODE underground mine\nobreakspace  {}\cite  {chen2024geode} ($\gamma $: Livox Avia, 70\textdegree {} FOV, external Xsens MTi-30 IMU). \textbf  {Bold} = best. ``---'' = divergence ($>$\SI {100}{\meter }) or no GT overlap. All baselines use identical bag files, extrinsics, and evaluation pipeline.}}{8}{}\protected@file@percent }
+\newlabel{tab:geode}{{III}{8}}
+\citation{yuan2022voxelmap}
+\bibstyle{IEEEtran}
+\bibdata{refs}
+\bibcite{xu2021fastlio}{1}
+\bibcite{xu2022fastlio2}{2}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Per-sequence ATE RMSE on M3DGR Avia. HD-LIO matches Surfel-LIO for the lowest mean while additionally providing degeneracy feedback. iG-LIO diverges on Dynamic03 and Dynamic04.}}{9}{}\protected@file@percent }
+\newlabel{fig:ate_avia}{{5}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces HD-LIO trajectory on M3DGR Avia Dark01, colored by per-point ATE. RMSE = \SI {0.153}{\meter } (33\% lower than FAST-LIO2's \SI {0.227}{\meter }). Error remains below \SI {0.1}{\meter } (green) along most of the path; the largest deviations occur at sharp turns where the 70\textdegree {} FOV transiently loses geometric constraint.}}{9}{}\protected@file@percent }
+\newlabel{fig:traj_dark01}{{6}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Ablation on NTU VIRAL: ATE RMSE [\si {\meter }]. Each row disables one mechanism from the full HD-LIO. The surfel map is the dominant contributor on this 16-beam sensor.}}{9}{}\protected@file@percent }
+\newlabel{tab:ablation}{{IV}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Ablation on M3DGR Avia (70\textdegree {} FOV): ATE RMSE [\si {\meter }]. Bold = best. Degeneracy feedback and $\sigma ^2_n$ are critical under narrow FOV.}}{9}{}\protected@file@percent }
+\newlabel{tab:ablation_avia}{{V}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {IX}Conclusion}{9}{}\protected@file@percent }
+\newlabel{sec:conclusion}{{IX}{9}}
+\@writefile{toc}{\contentsline {section}{References}{9}{}\protected@file@percent }
+\bibcite{cai2021ikdtree}{3}
+\bibcite{bai2022fasterlio}{4}
+\bibcite{chen2024iglio}{5}
+\bibcite{yuan2022voxelmap}{6}
+\bibcite{lv2025surfellio}{7}
+\bibcite{nguyen2023slict}{8}
+\bibcite{zhang2016degeneracy}{9}
+\bibcite{li2025lodestar}{10}
+\bibcite{park2025genzlio}{11}
+\bibcite{yin2023m3dgr}{12}
+\bibcite{nguyen2022ntuviral}{13}
+\bibcite{he2023pointlio}{14}
+\bibcite{shan2020liosam}{15}
+\bibcite{vizzo2023kissicp}{16}
+\bibcite{dellenbach2022cticp}{17}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces ATE error-colored trajectories on GEODE Tunneling\_tunnel5 (VLP-16, mine tunnel). Left: HD-LIO (RMSE = \SI {0.014}{\meter }). Right: FAST-LIO2 (RMSE = \SI {0.260}{\meter }). Both use the same colorbar scale. HD-LIO's bidirectional degeneracy feedback keeps the trajectory near-zero error (uniform dark green) throughout the tunnel, while FAST-LIO2 accumulates lateral drift (yellow-red patches) absent degeneracy-aware map control.}}{10}{}\protected@file@percent }
+\newlabel{fig:geode_tunnel}{{7}{10}}
+\bibcite{chen2023dlio}{18}
+\bibcite{forster2017manifold}{19}
+\bibcite{segal2009gicp}{20}
+\bibcite{koide2021vgicp}{21}
+\bibcite{tuna2024lion}{22}
+\bibcite{stewart1990matrix}{23}
+\bibcite{grupp2017evo}{24}
+\bibcite{chen2024geode}{25}
+\gdef \@abspage@last{11}

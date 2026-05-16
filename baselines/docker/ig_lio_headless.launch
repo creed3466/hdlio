@@ -1,0 +1,11 @@
+<launch>
+    <!-- Headless launch for iG-LIO runs (no rviz).
+         Config filename is chosen at runtime via $(env IG_LAUNCH_CFG):
+           - avia.yaml  for Avia (Livox) datasets (surfel_data bags)
+           - ncd.yaml   for NTU VIRAL (Ouster)
+         The entrypoint copies /config/params.yaml over the baked template
+         before this launch loads it. -->
+    <arg name="cfg" default="$(env IG_LAUNCH_CFG)"/>
+    <rosparam command="load" file="$(find ig_lio)/config/$(arg cfg)" />
+    <node pkg="ig_lio" type="ig_lio_node" name="ig_lio_node" output="screen" />
+</launch>

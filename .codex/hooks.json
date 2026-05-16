@@ -1,0 +1,79 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx block-no-verify@1.1.2",
+            "statusMessage": "Block git hook-bypass flag to protect pre-commit, commit-msg, and pre-push hooks from being skipped"
+          }
+        ],
+        "description": "Block git hook-bypass flag to protect pre-commit, commit-msg, and pre-push hooks from being skipped",
+        "id": "pre:bash:block-no-verify"
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/euntae/Project/tofslam/.codex/scripts/hooks/pre-bash-tmux-reminder.js\"",
+            "statusMessage": "Reminder to use tmux for long-running commands"
+          }
+        ],
+        "description": "Reminder to use tmux for long-running commands",
+        "id": "pre:bash:tmux-reminder"
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/euntae/Project/tofslam/.codex/scripts/hooks/pre-bash-git-push-reminder.js\"",
+            "statusMessage": "Reminder before git push to review changes"
+          }
+        ],
+        "description": "Reminder before git push to review changes",
+        "id": "pre:bash:git-push-reminder"
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/euntae/Project/tofslam/.codex/scripts/hooks/pre-bash-commit-quality.js\"",
+            "statusMessage": "Pre-commit quality check: lint staged files, validate commit message format, detect console.log/debugger/secrets before committing"
+          }
+        ],
+        "description": "Pre-commit quality check: lint staged files, validate commit message format, detect console.log/debugger/secrets before committing",
+        "id": "pre:bash:commit-quality"
+      },
+      {
+        "matcher": "apply_patch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/euntae/Project/tofslam/.codex/scripts/hooks/doc-file-warning.js\"",
+            "statusMessage": "Doc file warning: warn about non-standard documentation files (exit code 0; warns only)"
+          }
+        ],
+        "description": "Doc file warning: warn about non-standard documentation files (exit code 0; warns only)",
+        "id": "pre:write:doc-file-warning"
+      },
+      {
+        "matcher": "apply_patch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/euntae/Project/tofslam/.codex/scripts/hooks/config-protection.js\"",
+            "timeout": 5,
+            "statusMessage": "Block modifications to linter/formatter config files. Steers agent to fix code instead of weakening configs."
+          }
+        ],
+        "description": "Block modifications to linter/formatter config files. Steers agent to fix code instead of weakening configs.",
+        "id": "pre:config-protection"
+      }
+    ]
+  }
+}

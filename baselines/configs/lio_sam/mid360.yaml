@@ -1,0 +1,162 @@
+# LIO-SAM (brytsknguyen fork) config for M3DGR Mid-360 sequences.
+#
+# STATUS: TEMPLATE — NOT YET RUNNABLE.
+#   LIO-SAM's imageProjection.cpp consumes sensor_msgs/PointCloud2, not
+#   livox_ros_driver/CustomMsg. The v2-to-v1 CustomMsg namespace bridge
+#   (baselines/tools/livox_v2_to_v1_republish) is insufficient here — we
+#   still need a CustomMsg→PointCloud2 adapter node.
+#
+#   The upstream brytsknguyen fork references two such adapters:
+#     * merge_lidar / merge_lidar_livox_to_ouster (used in run_atv.launch)
+#     * slict_livox_to_ouster (referenced in run_mcdviral.launch, commented)
+#   Neither is currently baked into baselines-lio_sam:ros1.
+#
+#   Next steps to unblock:
+#     1) Port merge_lidar_livox_to_ouster into baselines/tools/ (or bake into
+#        the lio_sam image).
+#     2) Chain that adapter after livox_v2_to_v1_republish so the pipeline is:
+#          /livox/mid360/lidar        (livox_ros_driver2/CustomMsg, from bag)
+#            → /livox/mid360/lidar_v1 (livox_ros_driver/CustomMsg, same bytes)
+#            → /livox/mid360/points   (sensor_msgs/PointCloud2)
+#     3) Flip pointCloudTopic below to /livox/mid360/points.
+#   Tracked in baselines/docs/phase3_mid360_plan.md §SLICT + LIO-SAM deferral.
+#
+# The current values below mirror the brytsknguyen fork's mcdviral_atv_livox
+# template, adjusted for Mid-360 intrinsics. They are the correct settings
+# once the PointCloud2 bridge lands; until then this config MUST NOT be
+# invoked by the harness (run_tier1_mid360.sh skips lio_sam).
+
+lio_sam:
+
+  # Topics
+  pointCloudTopic: "/livox/mid360/points"     # TODO: produced by future CustomMsg→PC2 adapter
+  imuTopic:  "/livox/mid360/imu"              # 200 Hz, sensor_msgs/Imu (direct from bag, no bridge)
+  odomTopic: "odometry/imu"
+  gpsTopic:  "odometry/gpsz"
+
+  # Frames
+  lidarFrame: "base_link"
+  baselinkFrame: "base_link"
+  odometryFrame: "odom"
+  mapFrame: "map"
+
+  # GPS — M3DGR has no GPS/GNSS; disable.
+  useImuHeadingInitialization: false
+  useGpsElevation: false
+  gpsCovThreshold: 2.0
+  poseCovThreshold: 25.0
+
+  # Export settings
+  savePCD: false
+  savePCDDirectory: "/Downloads/LOAM/"
+
+  # Sensor Settings (Mid-360, non-repetitive scan)
+  sensor: livox
+  N_SCAN: 4                                   # Mid-360 4-lane non-repetitive
+  Horizon_SCAN: 6000                          # Mid-360 ≈ 24 kHz points / 10 Hz = 2400 per lane
+  downsampleRate: 1
+  lidarMinRange:  1.0                         # Mid-360 blind: ~0.1 m, keep v1 default 1.0
+  lidarMaxRange:  90.0                        # Mid-360 spec: 70 m @ 10% reflectivity, 90 @ 80%
+
+  # IMU Settings (Mid-360 built-in IMU — same noise class as Avia's IMU)
+  imuAccNoise:  6.0e-2
+  imuGyrNoise:  5.0e-3
+  imuAccBiasN:  8.0e-5
+  imuGyrBiasN:  3.0e-6
+  imuGravity:   9.80665
+  imuRPYWeight: 0.01
+
+  # Extrinsics (Mid-360 lidar → body IMU frame; identity rotation, M3DGR bag)
+  extrinsicTrans: [ -0.011, -0.02329, 0.04412 ]
+
+  extrinsicRot: [ 1,  0,  0,
+                  0,  1,  0,
+                  0,  0,  1]
+
+  extrinsicRPY: [ 1,  0,  0,
+                  0,  1,  0,
+                  0,  0,  1]
+
+  R_W2NED:      [ 1,  0,  0,
+                  0, -1,  0,
+                  0,  0, -1]
+
+  # LOAM feature threshold — keep brytsknguyen Livox defaults
+  edgeThreshold: 1.0
+  surfThreshold: 0.1
+  edgeFeatureMinValidNum: 10
+  surfFeatureMinValidNum: 100
+
+  # voxel filter params — indoor-tuned (M3DGR sequences are indoor/campus)
+  odometrySurfLeafSize: 0.2
+  mappingCornerLeafSize: 0.1
+  mappingSurfLeafSize: 0.2
+
+  # Robot motion constraint — unconstrained (6-DOF handheld trajectory)
+  z_tollerance: 1000
+  rotation_tollerance: 1000
+
+  # CPU Params
+  numberOfCores: 4                            # aligned with 3-way parallel cpuset
+  mappingProcessInterval: 0.15
+
+  # Surrounding map — indoor scale
+  surroundingkeyframeAddingDistThreshold: 1.0
+  surroundingkeyframeAddingAngleThreshold: 0.2
+  surroundingKeyframeDensity: 2.0
+  surroundingKeyframeSearchRadius: 50.0
+
+  # Loop closure
+  loopClosureEnableFlag: false                # off — consistent with Avia configs
+  loopClosureFrequency: 1.0
+  surroundingKeyframeSize: 50
+  historyKeyframeSearchRadius: 15.0
+  historyKeyframeSearchTimeDiff: 30.0
+  historyKeyframeSearchNum: 25
+  historyKeyframeFitnessScore: 0.3
+
+  # Visualization
+  globalMapVisualizationSearchRadius: 1000.0
+  globalMapVisualizationPoseDensity: 10.0
+  globalMapVisualizationLeafSize: 1.0
+
+# Navsat — disabled
+navsat:
+  frequency: 50
+  wait_for_datum: false
+  delay: 0.0
+  magnetic_declination_radians: 0
+  yaw_offset: 0
+  zero_altitude: true
+  broadcast_utm_transform: false
+  broadcast_utm_transform_as_parent_frame: false
+  publish_filtered_gps: false
+
+# EKF for Navsat — disabled via absent odometry/gps topic
+ekf_gps:
+  publish_tf: false
+  map_frame: map
+  odom_frame: odom
+  base_link_frame: base_link
+  world_frame: odom
+
+  frequency: 50
+  two_d_mode: false
+  sensor_timeout: 0.01
+  imu0: imu_correct
+  imu0_config: [false, false, false,
+                true,  true,  true,
+                false, false, false,
+                false, false, true,
+                true,  true,  true]
+  imu0_differential: false
+  imu0_queue_size: 50
+  imu0_remove_gravitational_acceleration: true
+  odom0: odometry/gps
+  odom0_config: [true,  true,  true,
+                 false, false, false,
+                 false, false, false,
+                 false, false, false,
+                 false, false, false]
+  odom0_differential: false
+  odom0_queue_size: 10

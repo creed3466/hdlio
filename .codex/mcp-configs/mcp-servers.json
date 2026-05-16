@@ -1,0 +1,170 @@
+{
+  "_role": "RCC v2 MCP catalog (15 servers). This file is documentation, not loaded at runtime. The runtime plugin manifest is /.mcp.json — a curated zero-config subset (9 servers) that ships with the plugin. Copy entries from this catalog into your ~/.claude.json (or use ECC_DISABLED_MCPS env var to disable bundled ones) to opt into the credential-requiring or path-requiring servers.",
+  "mcpServers": {
+    "jira": {
+      "command": "uvx",
+      "args": [
+        "mcp-atlassian==0.21.0"
+      ],
+      "env": {
+        "JIRA_URL": "YOUR_JIRA_URL_HERE",
+        "JIRA_EMAIL": "YOUR_JIRA_EMAIL_HERE",
+        "JIRA_API_TOKEN": "YOUR_JIRA_API_TOKEN_HERE"
+      },
+      "description": "Jira issue tracking \u2014 search, create, update, comment, transition issues"
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT_HERE"
+      },
+      "description": "GitHub operations - PRs, issues, repos"
+    },
+    "firecrawl": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firecrawl-mcp"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_KEY_HERE"
+      },
+      "description": "Web scraping and crawling"
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "description": "Persistent memory across sessions"
+    },
+    "omega-memory": {
+      "command": "uvx",
+      "args": [
+        "omega-memory",
+        "serve"
+      ],
+      "description": "Persistent agent memory with semantic search, multi-agent coordination, and knowledge graphs \u2014 run via uvx (richer than the basic memory store)"
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "description": "Chain-of-thought reasoning"
+    },
+    "cloudflare-docs": {
+      "type": "http",
+      "url": "https://docs.mcp.cloudflare.com/mcp",
+      "description": "Cloudflare documentation search"
+    },
+    "clickhouse": {
+      "type": "http",
+      "url": "https://mcp.clickhouse.cloud/mcp",
+      "description": "ClickHouse analytics queries"
+    },
+    "exa": {
+      "type": "http",
+      "url": "https://mcp.exa.ai/mcp",
+      "description": "Exa MCP \u2014 HTTP endpoint, no key required. Web search, research, code/company intel. Ships in plugin-root .mcp.json."
+    },
+    "exa-web-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "exa-mcp-server"
+      ],
+      "env": {
+        "EXA_API_KEY": "YOUR_EXA_API_KEY_HERE"
+      },
+      "description": "Exa CLI \u2014 local npx variant requiring EXA_API_KEY. Alternative to the HTTP `exa` endpoint above; choose one."
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ],
+      "description": "Live documentation lookup \u2014 use with /docs command and documentation-lookup skill (resolve-library-id, query-docs)."
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/path/to/your/projects"
+      ],
+      "description": "Filesystem operations (set your path)"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp",
+        "--browser",
+        "chrome"
+      ],
+      "description": "Browser automation and testing via Playwright"
+    },
+    "devfleet": {
+      "type": "http",
+      "url": "http://localhost:18801/mcp",
+      "description": "Multi-agent orchestration \u2014 dispatch parallel Claude Code agents in isolated worktrees. Plan projects, auto-chain missions, read structured reports. Repo: https://github.com/LEC-AI/claude-devfleet"
+    },
+    "token-optimizer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "token-optimizer-mcp"
+      ],
+      "description": "Token optimization for 95%+ context reduction via content deduplication and compression"
+    },
+    "confluence": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "confluence-mcp-server"
+      ],
+      "env": {
+        "CONFLUENCE_BASE_URL": "YOUR_CONFLUENCE_URL_HERE",
+        "CONFLUENCE_EMAIL": "YOUR_EMAIL_HERE",
+        "CONFLUENCE_API_TOKEN": "YOUR_CONFLUENCE_TOKEN_HERE"
+      },
+      "description": "Confluence Cloud integration \u2014 search pages, retrieve content, explore spaces"
+    },
+    "wandb": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "wandb-mcp-server"
+      ],
+      "env": {
+        "WANDB_API_KEY": "YOUR_WANDB_API_KEY_HERE"
+      },
+      "description": "Weights & Biases experiment tracking \u2014 query runs, metrics, sweeps, artifacts. Used by the experiment-tracking skill for /experiment, /reproduce, /sweep."
+    },
+    "mlflow": {
+      "command": "uvx",
+      "args": [
+        "mlflow-mcp",
+        "serve"
+      ],
+      "env": {
+        "MLFLOW_TRACKING_URI": "YOUR_MLFLOW_TRACKING_URI_HERE"
+      },
+      "description": "MLflow experiment tracking \u2014 query runs, models, registry, artifacts. Alternative to wandb for the experiment-tracking skill."
+    }
+  },
+  "_comments": {
+    "usage": "Copy the servers you need to your ~/.claude.json mcpServers section",
+    "env_vars": "Replace YOUR_*_HERE placeholders with actual values",
+    "disabling": "Use ECC_DISABLED_MCPS=github,context7,... to disable bundled ECC MCPs during install/sync, or use disabledMcpServers in project config for per-project overrides",
+    "context_warning": "Keep under 10 MCPs enabled to preserve context window"
+  }
+}

@@ -1,0 +1,143 @@
+# SLICT config for M3DGR Mid-360 sequences — STUB / DEFERRED.
+#
+# STATUS: NOT RUNNABLE. SLICT consumes sensor_msgs/PointCloud2, not
+# livox_ros_driver/CustomMsg. The v2→v1 namespace republisher in
+# baselines/tools/livox_v2_to_v1_republish is therefore insufficient for
+# SLICT — an additional CustomMsg → PointCloud2 adapter is required
+# (ordered-point conversion preserving per-point timestamp offset_time).
+#
+# SLICT's upstream ships a `slict_livox_to_ouster` converter for exactly
+# this use case, but it is not baked into baselines-slict:ros1 today.
+#
+# Unblocking path (tracked in baselines/docs/phase3_mid360_plan.md):
+#   1) Enable `slict_livox_to_ouster` (or port merge_lidar_livox_to_ouster)
+#      inside baselines-slict:ros1, emitting /livox/mid360/points_ordered.
+#   2) Chain the pipeline as:
+#        /livox/mid360/lidar (v2 CustomMsg from bag)
+#          → /livox/mid360/lidar_v1 (v1 CustomMsg, namespace rewrite)
+#          → /livox/mid360/points_ordered (PointCloud2 w/ ring+time fields)
+#   3) Flip lidar_topic below to the converted topic.
+#   4) Validate that per-point offset_time is preserved through both
+#      bridges — SLICT's surfel deskew relies on it.
+#
+# Until those steps land, run_tier1_mid360.sh excludes SLICT from the
+# algorithm matrix (see harness DEFAULT_ALGOS).
+
+# To inform the algorithm to exit automatically when no data is received
+autoexit:           0
+
+# TODO: replace with /livox/mid360/points_ordered once PC2 adapter lands.
+lidar_topic:        [ "/livox/mid360/points_ordered" ]
+
+merged_lidar_topic: "/merged_pc"
+
+# Lidar extrinsics: Transform of coordinates in lidar's frame to body.
+# Last row (4,4)=0 means stamp is at END of scan (Mid-360 packet convention);
+# flip to 1 once we confirm how slict_livox_to_ouster stamps the PC2.
+lidar_extr:         [
+                      1.0,  0.0,  0.0, -0.011,
+                      0.0,  1.0,  0.0, -0.02329,
+                      0.0,  0.0,  1.0,  0.04412,
+                      0.0,  0.0,  0.0,  0.000
+                    ]
+
+# Minimum lidar range to admit (Mid-360 blind ~0.1 m; SLICT default was 0.5)
+min_range:          0.5
+
+# IMU
+imu_topic:          "/livox/mid360/imu"
+GRAV:               9.81007
+
+# IMU noises (placeholder — copied from NTU VIRAL SLICT config; retune
+# after first SLICT Mid-360 run succeeds).
+GYR_N:              2
+GYR_W:              4
+ACC_N:              0.2
+ACC_W:              4
+
+POSE_N:             20
+VEL_N:              10
+lidar_weight:       1
+
+BG_BOUND:           [ 0.1,  0.1,  0.2]
+BA_BOUND:           [ 0.3,  0.3,  0.4]
+
+WINDOW_SIZE:        3
+N_SUB_SEG:          4
+SPLINE_N:           4
+deltaT:             0.01
+start_fix_span:     0.0
+final_fix_span:    -1.0
+reassociate_steps:  2
+deskew_method:      [ 0 ]
+reassoc_rate:       0
+use_ceres:          0
+
+leaf_size:          0.05
+assoc_spacing:      0.8
+surfel_map_depth:   16
+surfel_min_point:   10
+surfel_min_depth:   1
+surfel_query_depth: 7
+surfel_intsect_rad: 0.1
+surfel_min_plnrty:  0.7
+use_ufm:            1
+
+dis_to_surfel_max:  0.5
+score_min:          0.0
+
+ds_rate:            [ 1 ]
+sweep_len:          1
+
+kf_min_dis:         2.0
+kf_min_angle:       10
+refine_kf:          0
+
+lidar_loss_thres:  -10.0
+imu_loss_thres:    -1.0
+
+linSolver:          "snc"
+trustRegType:       "lm"
+linAlgbLib:         "eigen"
+max_solve_time:     0.3
+max_iterations:     30
+ensure_real_time:   0
+find_factor_cost:   0
+fit_spline:         0
+lambda:             1.0
+
+fuse_lidar:         1
+fuse_imu:           1
+fuse_poseprop:      0
+fuse_velprop:       0
+fuse_marg:          1
+
+regularize_imu:     1
+imu_init_time:      0.5
+lite_redeskew:      1
+max_outer_iters:    3
+max_lidar_factor:   8000
+dj_thres:           0.0
+dx_thres:           0.5
+
+# Loop closure disabled by default for Mid-360 indoor runs.
+loop_en:            0
+loop_kf_nbr:        20
+loop_kfid_mindiff:  20
+
+icpMaxIter:         100
+icpFitnessThres:    0.6
+histDis:            15
+
+rib_edge:           100
+odom_q_noise:       0.1
+odom_p_noise:       0.1
+loop_weight:        0.05
+
+publish_map:        0
+
+show_report:        1
+show_preop_times:   1
+show_lioop_times:   1
+
+log_dir:            "/out/slict_log"

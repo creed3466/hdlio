@@ -1,0 +1,64 @@
+# Build artifacts
+build/
+devel/
+install/
+log/
+
+# Data & large files
+dump/
+docs/paper/
+.catkin_workspace
+*.bag
+*.pcd
+*.ply
+
+# External dependencies (has own git)
+external/
+src/FAST_LIO/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Credentials
+.env
+credentials*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+
+# Python virtualenvs (DO NOT commit binaries — use requirements.txt instead)
+.venv/
+venv/
+*/.venv/
+paper/.venv/
+
+# Large paper figure maps (regeneratable via paper_figures/)
+paper/figure/**/maps/*.npz
+
+# Editor/backup files
+*.bak
+*.bak.*
+*.orig
+*~
+
+# Runtime / temporary logs
+*.stderr.log
+*.stdout.log
+
+# Session-local Claude state
+.claude/
+scheduled_tasks.lock
+
+# Runtime logs
+logs/
+
+# Paper figures (generated)
+paper_figures/

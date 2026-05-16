@@ -1,0 +1,7 @@
+ecc-codex-check.md
+ecc-codex-eval-gate.md
+ecc-codex-quality-gate.md
+ecc-codex-research-gate.md
+ecc-tool-check-coverage.md
+ecc-tool-run-tests.md
+ecc-tool-security-audit.md

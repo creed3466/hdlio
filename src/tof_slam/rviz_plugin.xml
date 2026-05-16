@@ -1,0 +1,7 @@
+<library path="tof_slam_rviz_plugin">
+  <class name="tof_slam/SaveMapPanel"
+         type="tof_slam::SaveMapPanel"
+         base_class_type="rviz_common::Panel">
+    <description>TofSLAM map save control panel. Provides a GUI button to trigger map saving via std_srvs/srv/Trigger service call.</description>
+  </class>
+</library>

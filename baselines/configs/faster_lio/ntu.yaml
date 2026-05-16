@@ -1,0 +1,49 @@
+# Faster-LIO config for NTU VIRAL (Ouster OS1-16)
+# Based on upstream config/ouster64.yaml with NTU VIRAL topics and scan_line=16.
+common:
+    lid_topic: "/os1_cloud_node1/points"
+    imu_topic: "/imu/imu"
+    time_sync_en: false
+
+preprocess:
+    lidar_type: 3                # 3 = ouster
+    scan_line: 16                # OS1-16
+    blind: 4
+    time_scale: 1e-3
+
+mapping:
+    acc_cov: 0.1
+    gyr_cov: 0.1
+    b_acc_cov: 0.0001
+    b_gyr_cov: 0.0001
+    fov_degree: 180
+    det_range: 150.0
+    extrinsic_est_en: false
+    # NTU VIRAL lidar-imu extrinsic (from dataset yaml)
+    extrinsic_T: [ 0.050, 0.000, 0.055 ]
+    extrinsic_R: [ 1, 0, 0,
+                   0, 1, 0,
+                   0, 0, 1 ]
+
+publish:
+    path_publish_en: true
+    scan_publish_en: false
+    dense_publish_en: false
+    scan_bodyframe_pub_en: false
+
+path_save_en: true
+
+pcd_save:
+    pcd_save_en: false
+    interval: -1
+
+feature_extract_enable: false
+point_filter_num: 3
+max_iteration: 3
+filter_size_surf: 0.5
+filter_size_map: 0.5
+cube_side_length: 1000
+
+ivox_grid_resolution: 0.5
+ivox_nearby_type: 18
+esti_plane_threshold: 0.1

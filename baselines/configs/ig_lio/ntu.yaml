@@ -1,0 +1,52 @@
+# iG-LIO config for NTU VIRAL (Ouster OS1-16)
+lidar_topic: /os1_cloud_node1/points
+imu_topic: /imu/imu
+lidar_type: ouster
+min_radius: 1.0
+max_radius: 100.0
+point_filter_num: 2
+time_scale: 0.001         # NTU VIRAL Ouster timestamps in seconds (rosbag header)
+enable_ahrs_initalization: false
+enable_acc_correct: false
+
+# Static init window — raised from upstream default 20 (50 ms @ 400 Hz VN100)
+# to 200 (~0.5 s) so mid-motion bag starts (eee_01, sbs_03) don't pollute the
+# gravity mean. See baselines/docs/task53_iglio_init_research_20260414.md.
+max_init_count: 200
+
+# Option C — motion-aware static init rejection (task #63).
+# A longer window alone cannot wash out systematic motion acceleration when
+# the bag starts mid-walk (eee_01). These gates reject any candidate window
+# whose mean angular rate > 0.01 rad/s (~0.57°/s) or whose worst per-axis
+# accel std > 0.05 m/s² (~5 mg). If the whole bag is motion-dirty we fall
+# back to the least-motion window after 4000 samples (~10 s @ 400 Hz).
+gyr_motion_threshold: 0.01
+acc_std_threshold: 0.05
+max_init_wait_samples: 4000
+
+scan_resolution: 0.5
+voxel_map_resolution: 0.5
+max_iterations: 10
+
+acc_cov: 0.001249
+gyr_cov: 0.000208
+ba_cov: 0.000106
+bg_cov: 0.000004
+
+gicp_constraints_gain: 100.0
+point2plane_constraints_gain: 1000.0
+enable_undistort: true
+enable_outlier_rejection: true
+
+gravity: 9.80665
+init_ori_cov: 0.0001
+init_pos_cov: 0.0001
+init_vel_cov: 100.0
+init_ba_cov: 0.000001
+init_bg_cov: 0.000001
+
+# NTU VIRAL VN100 → Ouster extrinsic (T_imu_lidar)
+t_imu_lidar : [0.050, 0.000, 0.055]
+R_imu_lidar : [1, 0, 0,
+                0, 1, 0,
+                0, 0, 1]

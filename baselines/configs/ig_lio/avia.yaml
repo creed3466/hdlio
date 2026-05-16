@@ -1,0 +1,66 @@
+# iG-LIO config for M3DGR Avia sequences
+lidar_topic: /livox/avia/lidar
+imu_topic: /livox/avia/imu
+lidar_type: livox
+min_radius: 0.5
+max_radius: 150.0
+point_filter_num: 3
+time_scale: 1000.0
+enable_ahrs_initalization: false
+# M3DGR Avia IMU publishes in m/s² (ROS sensor_msgs/Imu convention).
+# iG-LIO's ImuCallBack unconditionally multiplies by kAccScale = 9.80665
+# when this flag is true (ig_lio_node.cpp:90-93) — which double-scales to
+# ~10 g on the Avia bag, locking init_ba ≈ 85.7 m/s² → EKF divergence
+# (Dy03 / Dy04: 275 km drift).
+#
+# Direct evidence (lio.cpp:990 init prints, same binary):
+#   Avia Dy03   : ||mean_acc_|| = 95.57 m/s² (= 9.78 g, after *kAccScale)
+#   Mid-360 Dy03: ||mean_acc_|| =  9.77 m/s² (= 1.00 g, after *kAccScale)
+# → raw Avia bag is in m/s² (no correction needed); raw Mid-360 bag is
+#   in g-units (mid360.yaml correctly keeps flag = true).
+#
+# NTU yaml already sets this false (VN100 publishes m/s² too).
+# See baselines/docs/task65_avia_dy_divergence_research_r2_20260414.md.
+enable_acc_correct: false
+
+# Static init window — raised from upstream default 20 (100 ms @ 200 Hz Avia)
+# to 200 (~1.0 s) so handheld/gait starts (Dynamic03/04) don't pollute the
+# gravity mean. See baselines/docs/task53_iglio_init_research_20260414.md.
+max_init_count: 200
+
+# Option C-v2 — motion-aware static init rejection (task #63).
+# acc_std_threshold relaxed 0.05 → 0.25 m/s² to match typical IMU per-axis
+# noise floor; the Avia built-in IMU is noisier than VN100 (config
+# acc_cov/gyr_cov = 0.1) so 0.25 is a safe conservative value. gyr_motion_
+# threshold stays at 0.01 rad/s. Safety cap unchanged at 4000 samples
+# (~20 s @ 200 Hz).
+gyr_motion_threshold: 0.01
+acc_std_threshold: 0.25
+max_init_wait_samples: 4000
+
+scan_resolution: 0.5
+voxel_map_resolution: 0.5
+max_iterations: 10
+
+acc_cov: 0.1
+gyr_cov: 0.1
+ba_cov: 0.000001
+bg_cov: 0.000001
+
+gicp_constraints_gain: 100.0
+point2plane_constraints_gain: 1000.0
+enable_undistort: true
+enable_outlier_rejection: true
+
+gravity: 9.80665
+init_ori_cov: 0.0001
+init_pos_cov: 0.0001
+init_vel_cov: 100.0
+init_ba_cov: 0.000001
+init_bg_cov: 0.000001
+
+# Avia extrinsics (T_imu_lidar)
+t_imu_lidar : [0.04165, 0.02326, -0.0284]
+R_imu_lidar : [1, 0, 0,
+                0, 1, 0,
+                0, 0, 1]
