@@ -10,10 +10,11 @@ ENV CATKIN_WS=/root/catkin_ws
 SHELL ["/bin/bash", "-c"]
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    git wget curl nano vim unzip \
+    git wget curl nano vim unzip time \
     cmake ninja-build build-essential \
     libeigen3-dev libpcl-dev libopencv-dev \
     libboost-all-dev libyaml-cpp-dev \
+    libspdlog-dev \
     libgoogle-glog-dev libgflags-dev \
     libatlas-base-dev libsuitesparse-dev \
     libtbb-dev \
